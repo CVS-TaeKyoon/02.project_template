@@ -1,0 +1,16 @@
+# 개인 설정 — 이름에 .local 이 들어간 것은 전부 무시한다.
+# 도구마다 이름이 다르므로(settings.local.json, config.local.toml, .env.local)
+# 파일명을 하나씩 적는 대신 표식으로 거른다.
+# 개인 설정 파일을 새로 만들 때 이름에 .local 을 넣을 것.
+*.local
+*.local.*
+
+# 환경
+.env
+
+# OS
+Thumbs.db
+.DS_Store
+
+# .claude/skills/ 는 무시하지 않는다.
+# 미러를 커밋해야 clone 직후 Claude Code가 동작한다.

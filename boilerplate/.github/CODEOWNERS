@@ -1,0 +1,23 @@
+# 리뷰 주체를 파일로 고정한다. 보는 관점이 다르면 보는 사람도 달라야 한다.
+#
+# 채울 것: 아래 팀·계정 이름을 실제 조직의 것으로 바꾼다.
+
+# 파이프라인 문서
+#   intent — 이게 풀 만한 문제인가
+#   spec   — 이 설계가 그 문제를 푸는가
+#   plan   — 이 방식이 안전한가
+/docs/intent/     @product-owner
+/docs/specs/      @product-owner @tech-lead
+/docs/plans/      @tech-lead
+
+# 작업 방식을 규정하는 것 — 바뀌면 팀 전체가 다르게 일하게 된다.
+# CLAUDE.md가 빠지면 도구 매핑이 깨져 규칙 전체가 읽히지 않는 변경이 리뷰 없이 들어간다.
+# why-this-structure.md가 빠지면 규칙은 남는데 그 근거가 조용히 사라진다.
+/AGENTS.md                   @tech-lead
+/CLAUDE.md                   @tech-lead
+/docs/why-this-structure.md  @tech-lead
+/docs/conventions/           @tech-lead
+/.agents/skills/             @tech-lead
+
+# 되돌리기 어려운 결정
+/docs/decisions/  @tech-lead
