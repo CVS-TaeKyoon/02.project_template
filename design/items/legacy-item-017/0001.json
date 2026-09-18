@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-017",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "6. 구현하고, 벗어나면 갱신한다",
+  "content": "### 6. 구현하고, 벗어나면 갱신한다\n\n계획이 승인되면 구현한다. 계획이 충실하면 대개 한 번에 끝난다.\n\n**구현이 계획에서 벗어나면 같은 커밋에서 plan.md를 갱신한다.** 이게 규율이다. 코드와 계획이 어긋난 채로 머지되면 plan.md는 그 순간부터 거짓말이 되고, 리뷰가 diff를 계획과 대조하는 것도 무의미해진다.\n\n동기화를 확실히 하고 싶다면 git 훅이나 CI 검사로 강제할 수 있다 — 구현 파일이 바뀌는 커밋에 plan.md 변경이 없으면 경고하거나 차단하는 식이다.",
+  "rationale": "boilerplate/.agents/skills/implementation-plan/SKILL.md:83–90에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-03"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

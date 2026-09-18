@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "project_name": "02.project_template",
+  "purpose_id": null,
+  "authorities": [
+    {
+      "domain": "운영과 탐색",
+      "path": "AGENTS.md",
+      "role": "canonical"
+    },
+    {
+      "domain": "설계 요구·결정·제약·미결",
+      "path": "design/items",
+      "role": "canonical"
+    },
+    {
+      "domain": "설계 승인과 보존 원문",
+      "path": "design/sources",
+      "role": "canonical"
+    },
+    {
+      "domain": "설계 자료 구조",
+      "path": "boilerplate/.agents/design-data/schemas/design.schema.json",
+      "role": "canonical"
+    },
+    {
+      "domain": "설계 검증 인터페이스",
+      "path": "boilerplate/.agents/design-data/design-data.psm1",
+      "role": "canonical"
+    },
+    {
+      "domain": "새 프로젝트 생성 절차",
+      "path": "START_PROJECT_PROMPT.md",
+      "role": "canonical"
+    },
+    {
+      "domain": "과거 설계 문서",
+      "path": "docs/superpowers",
+      "role": "archive"
+    },
+    {
+      "domain": "과거 구조 설명과 문서 양식",
+      "path": "boilerplate/docs",
+      "role": "archive"
+    },
+    {
+      "domain": "설계 탐색 색인",
+      "path": "design/index.json",
+      "role": "derived"
+    }
+  ],
+  "global_constraints": {
+    "paths": [
+      "AGENTS.md"
+    ],
+    "item_ids": [
+      "policy-design-01",
+      "policy-design-02",
+      "policy-design-03",
+      "policy-design-04",
+      "policy-design-05",
+      "policy-design-06",
+      "policy-design-07",
+      "policy-design-08",
+      "decision-explicit-git",
+      "decision-preserve-conventions"
+    ]
+  }
+}

@@ -3,8 +3,8 @@
     스킬 원본(.agents\skills)을 미러(.claude\skills)로 동기화한다.
 
 .DESCRIPTION
-    Claude Code는 .agents\skills 를, Codex는 .claude\skills 를 읽지 못한다.
-    두 도구가 같은 스킬을 쓰려면 파일이 두 경로에 있어야 하므로, 원본을 미러로 복제한다.
+    이 템플릿에서 제공하는 두 스킬 경로의 내용을 일치시키기 위해 원본을 미러로 복제한다.
+    각 도구의 경로 인식 규격은 사용하는 환경에서 별도로 확인한다.
     원본은 .agents\skills 뿐이다. 미러는 생성물이며 직접 수정하지 않는다.
 
 .PARAMETER Check
@@ -58,7 +58,7 @@ if ($Check) {
     Write-Host "미러가 원본과 다릅니다:"
     $diff | ForEach-Object { Write-Host "  $_" }
     Write-Host ""
-    Write-Host "해결: .agents\sync-skills.ps1 을 실행하고 결과를 함께 커밋하세요."
+    Write-Host "해결: 원본과 미러의 변경을 확인한 뒤 .agents\sync-skills.ps1 을 실행하세요. 커밋은 명시적 요청이 있을 때만 합니다."
     Write-Host "주의: .claude\skills 를 직접 고쳤다면 그 수정은 사라집니다. 원본에 옮기세요."
     exit 1
 }

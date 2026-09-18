@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "legacy-file-08",
+  "kind": "legacy_file",
+  "locator": {
+    "description": "초기 이전 전 원문. 원래 파일 SHA256: c6e0bbe66ca48d2d8d1d30344018129f915b322de863457e48fcf63daf51a1bb",
+    "path": "boilerplate/.github/pull_request_template.md",
+    "commit": "2106763acd6475b99868e59bcb545a03d0a42d74",
+    "message_id": null,
+    "date": null
+  },
+  "content": "## 단계\n<!-- 해당하는 것만 남기고 아래 \"확인\" 섹션도 그 단계 것만 남긴다 -->\nintent / spec / plan / 구현\n\n## 무엇을\n<!-- 한 문장 -->\n\n## 확인 — intent\n- [ ] Problem이 해법이 아니라 **겪는 불편**으로 쓰였다\n- [ ] Constraints가 비어 있지 않다 (깨지면 안 되는 기존 동작이 최소 하나)\n- [ ] Open questions를 추측으로 채우지 않았다\n- [ ] 리뷰 승인 후 상태 줄을 `approved` 로 바꿨다\n\n## 확인 — spec\n- [ ] 대응 intent: `docs/intent/NNN-*.md` (같은 번호·슬러그)\n- [ ] 요구사항에 번호가 붙어 있다 (R__, N__)\n- [ ] Acceptance criteria가 검증 가능한 문장이다\n- [ ] intent의 Open questions를 처리했다 (답했거나, 이월 이유를 적었다)\n- [ ] Concerns에 판단 주체가 적혀 있다\n- [ ] 파일 목록·작업 순서가 들어가지 않았다\n- [ ] 리뷰 승인 후 상태 줄을 `approved` 로 바꿨다\n\n## 확인 — plan\n- [ ] 대응 spec: `docs/specs/NNN-*.md` (같은 번호·슬러그)\n- [ ] Files에 실제 경로가 있다 (신규/수정 구분)\n- [ ] Risks가 구체적인 파일이나 동작을 지목한다\n- [ ] Proof가 spec의 어느 AC에 대응하는지 적혀 있다\n- [ ] spec의 미해결 Concerns를 Risks로 이월했다\n- [ ] 리뷰 승인 후 상태 줄을 `approved` 로 바꿨다\n\n## 확인 — 구현\n- [ ] diff가 `plan.md`와 일치 (벗어난 부분은 같은 커밋에서 plan.md에 반영됨)\n- [ ] `plan.md`의 Proof 항목 전부 확인\n- [ ] 사용자에게 보이는 변화가 있다면 `CHANGELOG.md` 갱신 (작업 번호 포함)\n- [ ] 스킬을 수정했다면 `.agents/skills/`에서 수정하고 미러를 동기화\n- [ ] 문서 양식이나 스킬 안 템플릿을 고쳤다면 `.agents/check-templates.ps1` 통과\n\n## 리뷰어에게\n<!-- 특히 봐줬으면 하는 부분, 판단이 필요한 지점 -->\n",
+  "approvals": []
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "legacy-file-14",
+  "kind": "legacy_file",
+  "locator": {
+    "description": "초기 이전 전 원문. 원래 파일 SHA256: 9f0ff8c17a794fd82e98d22049f78d9fb101bda96376c77c3547e91e161a3eae",
+    "path": "boilerplate/docs/templates/intent.md",
+    "commit": "2106763acd6475b99868e59bcb545a03d0a42d74",
+    "message_id": null,
+    "date": null
+  },
+  "content": "# Intent: <제목>\n작성자: <이름 (소속)> · 상태: draft\n\n<!--\nproto-spec이다. 완성된 요구사항 명세가 아니다.\n구현 이야기(라이브러리·스키마·컴포넌트·API 설계)는 여기에 쓰지 않는다.\n한 화면을 넘기면 문제를 여러 개 뭉친 것이니 쪼갠다.\n섹션 제목은 영어로 고정, 본문은 한국어.\n-->\n\n## Problem\n<!-- 지금 무엇이 안 되는가. 얼마나 자주, 얼마나 심하게. 근거가 되는 수치나 사례.\n     주의: \"X 기능이 없다\"는 문제가 아니라 이미 정해진 해법이다. 겪는 불편을 써라. -->\n\n## Proposed outcome\n<!-- 해결되면 무엇이 달라지는가. 성공했다는 걸 어떻게 알 수 있는가. -->\n\n## Affected users and systems\n<!-- 누가 겪는 문제인가, 몇 명인가 / 얽혀 있는 서비스·레포·팀 -->\n\n## Constraints\n<!-- 건드리면 안 되는 것, 유지해야 하는 동작, 규제·보안·호환성 제약.\n     비워두지 마라. 최소한 \"깨지면 안 되는 기존 동작\"은 반드시 하나 이상 나온다. -->\n\n## Out of scope\n<!-- 이번에 하지 않을 것 -->\n\n## Open questions\n<!-- 모르는 것을 정직하게 남긴다. 추측으로 채우면 그 추측이 spec에서 사실로 굳는다.\n     정책·보안·법무 판단이 필요하면 누구에게 물어야 하는지까지 적는다.\n     여기 남은 항목은 spec의 Concerns로 이월된다. -->\n",
+  "approvals": []
+}

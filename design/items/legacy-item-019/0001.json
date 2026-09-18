@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-019",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "버그 수정이라면 순서가 다르다",
+  "content": "### 버그 수정이라면 순서가 다르다\n\n1. 먼저 **실패하는 테스트**를 쓴다.\n2. 그 테스트가 **예상한 이유로** 실패하는지 확인한다.\n3. 그 상태로 커밋한다.\n4. 그다음 코드를 고쳐 통과시킨다. **테스트는 수정하지 않는다.**\n\n수정 이전부터 존재했고 고쳐 쓸 수 없었던 테스트가 버그가 사라졌다는 증거다. 에이전트가 손쉬운 길로 테스트를 고쳐버리지 못하게 도구의 편집 차단 설정으로 테스트 파일 편집을 막는 것도 방법이다.",
+  "rationale": "boilerplate/.agents/skills/implementation-plan/SKILL.md:140–148에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-03"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

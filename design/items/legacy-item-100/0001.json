@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-100",
+  "revision": 1,
+  "kind": "plan",
+  "status": "proposed",
+  "title": "- [ ] **Step 3: 필수 지침을 검증한다**",
+  "content": "- [ ] **Step 3: 필수 지침을 검증한다**\n\nRun: `@('https://github.com/CVS-TaeKyoon/02.project_template','boilerplate','프로젝트를 만들 상위 폴더 경로','프로젝트 이름','프로젝트 목적','gh','.env') | ForEach-Object { if (-not (Select-String -LiteralPath START_PROJECT_PROMPT.md -Pattern ([regex]::Escape($_)) -Quiet)) { throw \"시작 프롬프트에 필수 내용이 없습니다: $_\" } }`\n\nExpected: 오류 없이 종료\n\n- [ ] **Step 4: 변경을 커밋한다**\n\n```powershell\ngit add START_PROJECT_PROMPT.md\ngit commit -m \"feat: 프로젝트 시작 프롬프트 추가\"\n```",
+  "rationale": "docs/superpowers/plans/2026-09-11-project-bootstrap-prompt.md:53–66에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-18"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

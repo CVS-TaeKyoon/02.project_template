@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-040",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "3. 채운다",
+  "content": "## 3. 채운다\n\n인터뷰가 끝나면 아래를 고친다. **사용자에게 무엇을 어떻게 고칠지 먼저 보여주고 확인을 받아라.**\n\n| 파일 | 할 일 |\n|---|---|\n| `AGENTS.md` | `## 프로젝트` 절을 3~5줄로 채운다. 무엇을 만드는가, 산출물, 대상 사용자 |\n| `README.md` | 프로젝트 이름, 소개, 개발 환경 절을 채운다 |\n| `README.md` | **맨 위 주석 블록 전체를 지운다** — 처리가 끝났으므로 |\n| `.github/CODEOWNERS` | 예시 계정을 실제 조직의 팀·계정으로 바꾼다 |\n| `.github/` → `.gitlab/` | 원격 호스트가 GitLab일 때만. 폴더명과 파일명을 그 호스트 규격에 맞춘다 |\n\n**`AGENTS.md`의 `## 하지 말 것` 마지막 자리는 비워둔다.** 여기에는 팀에서 **실제로 났던 사고**만\n적는다. 겪지 않은 사고를 미리 적으면 아무도 이유를 모르는 규칙이 되고, 그 사이에서 진짜 중요한\n항목이 묻힌다. 사용자가 채우고 싶어 하면 이 이유를 말해주고, 그래도 원하면 그때 적어라.\n\n**`.codex/config.toml`은 확인 없이 채우지 마라.** 팀이 Codex를 쓴다면 공식 문서에서 키 이름과\n동작을 확인한 뒤 근거 URL과 함께 넣는다. 확인되지 않은 설정을 넣으면 조용히 무시되고, 팀은\n설정이 적용된 줄 안다. Codex를 쓰지 않으면 비워두면 된다.\n\n**정책 스킬은 만들지 마라.** `.agents/skills/`에 팀 규칙 스킬을 미리 만들고 싶다는 요청이\n나오면 말려라. 리뷰에서 같은 지적을 반복하게 되었을 때 승격시키는 것이 이 구조의 방식이다.\n근거는 `docs/why-this-structure.md`의 \"스킬을 미리 만들어 두지 않는 이유\"에 있다.",
+  "rationale": "boilerplate/.agents/skills/project-bootstrap/SKILL.md:43–66에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-05"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

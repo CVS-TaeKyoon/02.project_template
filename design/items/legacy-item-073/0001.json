@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-073",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "소스 및 테스트 코드",
+  "content": "## 소스 및 테스트 코드\n\n- `src/`에는 사용자에게 제공할 완성된 프로그램 소스 코드만 둔다.\n- `tests/`에는 `src/`의 동작을 완성·검증하기 위해 작성하는 자동화 테스트 코드를 둔다.\n  구현 전에 작성한 테스트도 삭제하지 않고 회귀 검증에 유지한다.\n- 일회성 실험, 수동 확인, 임시 변환용 스크립트는 `tests/`에 넣지 않는다.",
+  "rationale": "boilerplate/AGENTS.md:21–27에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-09"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

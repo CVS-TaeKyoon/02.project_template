@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "decision-preserve-conventions",
+  "revision": 1,
+  "kind": "decision",
+  "status": "accepted",
+  "title": "충돌하지 않는 기존 규칙 유지",
+  "content": "한국어·UTF-8, 최소 변경, 기존 미커밋 변경 보존, 왜·무엇·어떻게의 검토 구분, 미결 사항과 판단 주체 이월, 회귀 테스트 보존, 비밀정보 보호, 도구별 매핑과 스킬 원본·미러 구분을 유지한다. 새 JSON 운영 방식과 충돌하는 저장 형식·승인·자동 커밋 규칙만 전환한다.",
+  "rationale": "기존 규칙을 임의 삭제하지 않고 새 원칙과의 충돌을 최소화하라는 요청을 반영한다.",
+  "exceptions": [],
+  "source_refs": [
+    "user-implementation-approval"
+  ],
+  "approval_source": "user-implementation-approval",
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

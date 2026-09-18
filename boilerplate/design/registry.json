@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "project_name": "<프로젝트 이름>",
+  "purpose_id": null,
+  "authorities": [
+    { "domain": "운영과 탐색", "path": "AGENTS.md", "role": "canonical" },
+    { "domain": "설계 요구·결정·제약·미결", "path": "design/items", "role": "canonical" },
+    { "domain": "설계 승인과 근거", "path": "design/sources", "role": "canonical" },
+    { "domain": "설계 자료 구조", "path": ".agents/design-data/schemas/design.schema.json", "role": "canonical" },
+    { "domain": "설계 검증 인터페이스", "path": ".agents/design-data/design-data.psm1", "role": "canonical" },
+    { "domain": "이전 구조 설명과 문서 양식", "path": "docs", "role": "archive" },
+    { "domain": "설계 탐색 색인", "path": "design/index.json", "role": "derived" }
+  ],
+  "global_constraints": { "paths": ["AGENTS.md"], "item_ids": [] }
+}

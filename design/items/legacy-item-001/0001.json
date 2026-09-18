@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-001",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "Codex용 새 프로젝트 시작 프롬프트",
+  "content": "# Codex용 새 프로젝트 시작 프롬프트\n\n아래 프롬프트 전체를 Codex 채팅에 붙여넣으세요. 이후에는 Codex의 질문에 답하기만 하면 됩니다. 터미널 명령을 입력하거나 파일을 직접 편집할 필요가 없습니다.\n\n```text\n새 프로젝트 생성을 도와줘. 나는 개발자가 아니므로, 터미널 명령을 입력하거나 파일을 직접 편집하라고 하지 말고 네가 필요한 작업을 직접 진행해줘.\n\n템플릿 원본은 https://github.com/CVS-TaeKyoon/02.project_template 이며, 이 저장소의 boilerplate 디렉터리만 사용해.\n\n진행 규칙:",
+  "rationale": "START_PROJECT_PROMPT.md:1–11에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-02"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

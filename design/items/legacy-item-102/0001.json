@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-102",
+  "revision": 1,
+  "kind": "plan",
+  "status": "proposed",
+  "title": "Task 3: 템플릿 무결성과 최종 검증",
+  "content": "### Task 3: 템플릿 무결성과 최종 검증\n\n**Files:**\n- Modify: 없음\n- Test: 시작 프롬프트·안내 문서·기존 스킬 미러·Git diff 검증\n\n**Interfaces:**\n- Consumes: `START_PROJECT_PROMPT.md`, `README.md`, `boilerplate/.agents/sync-skills.ps1`\n- Produces: 검증을 통과한 Git 작업 트리\n\n- [ ] **Step 1: 시작 프롬프트와 안내 문서의 형식 오류를 검사한다**\n\nRun: `git diff --check HEAD~2..HEAD; git diff --check`\n\nExpected: 출력 없음, 종료 코드 0\n\n- [ ] **Step 2: 기존 스킬 원본과 미러의 일치를 검사한다**\n\nRun: `& .\\\\boilerplate\\\\.agents\\\\sync-skills.ps1 -Check`\n\nExpected: `동기화 상태 정상`을 포함하고 종료 코드 0\n\n- [ ] **Step 3: 최종 상태를 확인한다**\n\nRun: `git status --short --branch; git log --oneline -3`\n\nExpected: 작업 트리가 비어 있고, 새 프롬프트·안내 문서 커밋이 `main`에 있다.\n\n- [ ] **Step 4: 원격에 push한다**\n\n```powershell\ngit push origin main\n```\n\nExpected: `main -> main` push 성공",
+  "rationale": "docs/superpowers/plans/2026-09-11-project-bootstrap-prompt.md:100–134에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-18"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "task": "새 프로젝트 초기 설정",
+  "status": "not_started",
+  "current_ids": [],
+  "open_ids": [],
+  "next_actions": [
+    "사용자의 프로젝트 이름과 목적을 확인하고 해당 답변을 근거로 초기 항목을 기록한다."
+  ],
+  "steps": [
+    {
+      "name": "프로젝트 이름과 목적 확인",
+      "status": "pending"
+    }
+  ],
+  "validation": {
+    "structural": "passed",
+    "semantic": "pending",
+    "notes": []
+  }
+}

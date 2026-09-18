@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-002",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "1. 지금은 정보를 한꺼번에 묻지 마. 먼저 채팅에서 다음 질문만 해: \"프로젝트를 만들 상위 폴더 경로를 알려주세요. 예를 들어 `E",
+  "content": "1. 지금은 정보를 한꺼번에 묻지 마. 먼저 채팅에서 다음 질문만 해: \"프로젝트를 만들 상위 폴더 경로를 알려주세요. 예를 들어 `E:\\\\my-projects`라고 입력하면 그 안에 새 프로젝트 폴더를 만듭니다.\" 내가 답한 뒤에만 다음 질문으로 넘어가.",
+  "rationale": "START_PROJECT_PROMPT.md:12–13에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-02"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-051",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "Spec 작성 (spec.md)",
+  "content": "# Spec 작성 (spec.md)\n\n`spec.md`는 **엔지니어가 계획을 세울 수 있는 수준의 요구사항·설계 문서**다. 전통적으로 분석가가 요구사항을 쓰고 디자이너가 그걸 다시 설계로 옮기던 두 단계를 한 세션으로 합친 것이다.\n\n이 단계의 진짜 목적은 문서를 만드는 게 아니라 **정책을 작성 시점에 적용하는 것**이다. 보안 리뷰에서 몇 주 뒤에 발견되는 대신, 스펙이 써지는 순간 정책이 읽히고 반영된다.",
+  "rationale": "boilerplate/.agents/skills/spec-authoring/SKILL.md:6–11에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-07"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

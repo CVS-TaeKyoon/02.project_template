@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "id": "policy-design-02",
+  "revision": 1,
+  "kind": "constraint",
+  "status": "accepted",
+  "title": "항목별 설계 원본",
+  "content": "2. 설계 원본 관리\n\n- 요구사항·결정·제약·미결 사항을 항목별 JSON으로 관리한다.\n- 항목마다 안정적인 고유 ID와 revision을 부여한다.\n- 상태는 proposed, accepted, superseded, rejected 등으로 구분한다.\n- 내용뿐 아니라 이유, 예외, 근거, 관련 항목도 보존한다.\n- 자연어를 억지로 제거하거나 의미를 알 수 없는 약어로 압축하지 않는다.\n- API 규격, JSON Schema, 코드 인터페이스 등 기존의 적합한 원본은 유지한다.\n- 같은 사실을 여러 원본에 중복 저장하지 않는다.\n- 분야별로 무엇이 기준 원본인지 명시한다.\n- 원본끼리 충돌하면 우선순위로 조용히 무시하지 말고 보고한다.",
+  "rationale": "대화 기억에 의존하지 않고 결정·이유·예외를 보존하기 위한 사용자의 명시적 운영 지시.",
+  "exceptions": [],
+  "source_refs": [
+    "user-design-principles"
+  ],
+  "approval_source": "user-design-principles",
+  "relations": [
+    {
+      "type": "supersedes",
+      "target": "legacy-item-010",
+      "revision": 1,
+      "reason": "기존 문서의 운영 방식 중 충돌하는 부분을 승인된 JSON 관리·명시적 승인 방식으로 전환한다. 충돌하지 않는 검토 원칙은 decision-preserve-conventions에 따라 유지한다."
+    },
+    {
+      "type": "supersedes",
+      "target": "legacy-item-012",
+      "revision": 1,
+      "reason": "기존 문서의 운영 방식 중 충돌하는 부분을 승인된 JSON 관리·명시적 승인 방식으로 전환한다. 충돌하지 않는 검토 원칙은 decision-preserve-conventions에 따라 유지한다."
+    },
+    {
+      "type": "supersedes",
+      "target": "legacy-item-027",
+      "revision": 1,
+      "reason": "기존 문서의 운영 방식 중 충돌하는 부분을 승인된 JSON 관리·명시적 승인 방식으로 전환한다. 충돌하지 않는 검토 원칙은 decision-preserve-conventions에 따라 유지한다."
+    },
+    {
+      "type": "supersedes",
+      "target": "legacy-item-036",
+      "revision": 1,
+      "reason": "기존 문서의 운영 방식 중 충돌하는 부분을 승인된 JSON 관리·명시적 승인 방식으로 전환한다. 충돌하지 않는 검토 원칙은 decision-preserve-conventions에 따라 유지한다."
+    },
+    {
+      "type": "supersedes",
+      "target": "legacy-item-046",
+      "revision": 1,
+      "reason": "기존 문서의 운영 방식 중 충돌하는 부분을 승인된 JSON 관리·명시적 승인 방식으로 전환한다. 충돌하지 않는 검토 원칙은 decision-preserve-conventions에 따라 유지한다."
+    },
+    {
+      "type": "supersedes",
+      "target": "legacy-item-047",
+      "revision": 1,
+      "reason": "기존 문서의 운영 방식 중 충돌하는 부분을 승인된 JSON 관리·명시적 승인 방식으로 전환한다. 충돌하지 않는 검토 원칙은 decision-preserve-conventions에 따라 유지한다."
+    },
+    {
+      "type": "supersedes",
+      "target": "legacy-item-048",
+      "revision": 1,
+      "reason": "기존 문서의 운영 방식 중 충돌하는 부분을 승인된 JSON 관리·명시적 승인 방식으로 전환한다. 충돌하지 않는 검토 원칙은 decision-preserve-conventions에 따라 유지한다."
+    },
+    {
+      "type": "supersedes",
+      "target": "legacy-item-049",
+      "revision": 1,
+      "reason": "기존 문서의 운영 방식 중 충돌하는 부분을 승인된 JSON 관리·명시적 승인 방식으로 전환한다. 충돌하지 않는 검토 원칙은 decision-preserve-conventions에 따라 유지한다."
+    },
+    {
+      "type": "supersedes",
+      "target": "legacy-item-051",
+      "revision": 1,
+      "reason": "기존 문서의 운영 방식 중 충돌하는 부분을 승인된 JSON 관리·명시적 승인 방식으로 전환한다. 충돌하지 않는 검토 원칙은 decision-preserve-conventions에 따라 유지한다."
+    },
+    {
+      "type": "supersedes",
+      "target": "legacy-item-052",
+      "revision": 1,
+      "reason": "기존 문서의 운영 방식 중 충돌하는 부분을 승인된 JSON 관리·명시적 승인 방식으로 전환한다. 충돌하지 않는 검토 원칙은 decision-preserve-conventions에 따라 유지한다."
+    },
+    {
+      "type": "supersedes",
+      "target": "legacy-item-055",
+      "revision": 1,
+      "reason": "기존 문서의 운영 방식 중 충돌하는 부분을 승인된 JSON 관리·명시적 승인 방식으로 전환한다. 충돌하지 않는 검토 원칙은 decision-preserve-conventions에 따라 유지한다."
+    },
+    {
+      "type": "supersedes",
+      "target": "legacy-item-060",
+      "revision": 1,
+      "reason": "기존 문서의 운영 방식 중 충돌하는 부분을 승인된 JSON 관리·명시적 승인 방식으로 전환한다. 충돌하지 않는 검토 원칙은 decision-preserve-conventions에 따라 유지한다."
+    },
+    {
+      "type": "supersedes",
+      "target": "legacy-item-065",
+      "revision": 1,
+      "reason": "기존 문서의 운영 방식 중 충돌하는 부분을 승인된 JSON 관리·명시적 승인 방식으로 전환한다. 충돌하지 않는 검토 원칙은 decision-preserve-conventions에 따라 유지한다."
+    },
+    {
+      "type": "supersedes",
+      "target": "legacy-item-066",
+      "revision": 1,
+      "reason": "기존 문서의 운영 방식 중 충돌하는 부분을 승인된 JSON 관리·명시적 승인 방식으로 전환한다. 충돌하지 않는 검토 원칙은 decision-preserve-conventions에 따라 유지한다."
+    },
+    {
+      "type": "supersedes",
+      "target": "legacy-item-067",
+      "revision": 1,
+      "reason": "기존 문서의 운영 방식 중 충돌하는 부분을 승인된 JSON 관리·명시적 승인 방식으로 전환한다. 충돌하지 않는 검토 원칙은 decision-preserve-conventions에 따라 유지한다."
+    },
+    {
+      "type": "supersedes",
+      "target": "legacy-item-070",
+      "revision": 1,
+      "reason": "기존 문서의 운영 방식 중 충돌하는 부분을 승인된 JSON 관리·명시적 승인 방식으로 전환한다. 충돌하지 않는 검토 원칙은 decision-preserve-conventions에 따라 유지한다."
+    },
+    {
+      "type": "supersedes",
+      "target": "legacy-item-072",
+      "revision": 1,
+      "reason": "기존 문서의 운영 방식 중 충돌하는 부분을 승인된 JSON 관리·명시적 승인 방식으로 전환한다. 충돌하지 않는 검토 원칙은 decision-preserve-conventions에 따라 유지한다."
+    },
+    {
+      "type": "supersedes",
+      "target": "legacy-item-074",
+      "revision": 1,
+      "reason": "기존 문서의 운영 방식 중 충돌하는 부분을 승인된 JSON 관리·명시적 승인 방식으로 전환한다. 충돌하지 않는 검토 원칙은 decision-preserve-conventions에 따라 유지한다."
+    }
+  ],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

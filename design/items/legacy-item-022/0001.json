@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-022",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "흔한 실패",
+  "content": "## 흔한 실패\n\n- **spec을 요약해놓고 계획이라 부르기.** 파일 경로와 순서가 없으면 계획이 아니다.\n- **Risks를 형식적으로 채우기.** \"예상치 못한 버그가 있을 수 있음\" 같은 문장은 아무 정보가 없다. 구체적인 파일이나 동작을 지목하라.\n- **Proof를 \"테스트 작성\"으로 적기.** 무엇을 증명하는 테스트인지, spec의 어느 기준에 대응하는지 적어라.\n- **계획을 커밋하고 잊기.** 구현이 벗어났는데 갱신하지 않으면 문서가 거짓이 된다. 차라리 삭제하는 게 낫다.\n- **심문 없이 첫 계획을 그대로 승인하기.** 계획 단계의 첫 출력은 초안이지 결론이 아니다.",
+  "rationale": "boilerplate/.agents/skills/implementation-plan/SKILL.md:166–173에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-03"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

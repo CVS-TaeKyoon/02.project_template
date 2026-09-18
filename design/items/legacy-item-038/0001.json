@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-038",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "1. 먼저 상태를 확인한다",
+  "content": "## 1. 먼저 상태를 확인한다\n\n남아 있는 자리표시자를 찾는다.\n\n```\nREADME.md            맨 위 주석 블록, <프로젝트 이름>, <!-- 채울 것 -->\nAGENTS.md            ## 프로젝트 절, ## 하지 말 것 마지막\n.github/CODEOWNERS   @tech-lead 등 예시 계정\n.codex/config.toml   비어 있는지\n```\n\n**아무 자리도 남아 있지 않으면 이 스킬은 이미 실행된 것이다.** 사용자에게 그 사실을 알리고,\n구조를 알고 싶은 것이라면 `project-structure-guide`를 쓰라고 안내한 뒤 멈춰라.",
+  "rationale": "boilerplate/.agents/skills/project-bootstrap/SKILL.md:14–27에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-05"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

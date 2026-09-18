@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-078",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "하지 말 것",
+  "content": "## 하지 말 것\n\n- `.claude/skills/` 직접 수정\n- 단계 경계 침범 (intent에 구현, spec에 파일 목록)\n- Open questions를 추측으로 채우기\n- CLAUDE.md에 프로젝트 규칙 쓰기 — 기준이 둘로 갈라진다\n- 확인하지 않은 도구 규격을 사실로 단정하기 — 근거 URL을 함께 남긴다\n\n<!-- 채울 것: 팀에서 실제로 났던 사고를 여기에 추가한다. 겪지 않은 사고는 미리 적지 않는다. -->",
+  "rationale": "boilerplate/AGENTS.md:80–88에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-09"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

@@ -1,0 +1,1616 @@
+{
+  "schema_version": 1,
+  "baseline_commit": "2106763acd6475b99868e59bcb545a03d0a42d74",
+  "files": [
+    {
+      "path": "README.md",
+      "source_id": "legacy-file-01",
+      "line_count": 16,
+      "disposition": "updated",
+      "sections": [
+        {
+          "start": 1,
+          "end": 4,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 5,
+          "end": 16,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        }
+      ]
+    },
+    {
+      "path": "START_PROJECT_PROMPT.md",
+      "source_id": "legacy-file-02",
+      "line_count": 37,
+      "disposition": "updated",
+      "sections": [
+        {
+          "start": 1,
+          "end": 11,
+          "ids": [
+            "legacy-item-001"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 12,
+          "end": 13,
+          "ids": [
+            "legacy-item-002"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "ids": [
+            "legacy-item-003"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 18,
+          "end": 19,
+          "ids": [
+            "legacy-item-004"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 20,
+          "end": 21,
+          "ids": [
+            "legacy-item-005"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 22,
+          "end": 23,
+          "ids": [
+            "legacy-item-006"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 24,
+          "end": 25,
+          "ids": [
+            "legacy-item-007"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 26,
+          "end": 33,
+          "ids": [
+            "legacy-item-008"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 34,
+          "end": 37,
+          "ids": [
+            "legacy-item-009"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        }
+      ]
+    },
+    {
+      "path": "boilerplate/.agents/skills/implementation-plan/SKILL.md",
+      "source_id": "legacy-file-03",
+      "line_count": 178,
+      "disposition": "updated",
+      "sections": [
+        {
+          "start": 1,
+          "end": 5,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 6,
+          "end": 11,
+          "ids": [
+            "legacy-item-010",
+            "policy-design-02"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 12,
+          "end": 27,
+          "ids": [
+            "legacy-item-011",
+            "decision-explicit-git"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 28,
+          "end": 29,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 30,
+          "end": 43,
+          "ids": [
+            "legacy-item-012",
+            "policy-design-02"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 44,
+          "end": 52,
+          "ids": [
+            "legacy-item-013"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 53,
+          "end": 64,
+          "ids": [
+            "legacy-item-014"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 65,
+          "end": 72,
+          "ids": [
+            "legacy-item-015"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 73,
+          "end": 82,
+          "ids": [
+            "legacy-item-016",
+            "decision-explicit-git"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 83,
+          "end": 90,
+          "ids": [
+            "legacy-item-017",
+            "decision-explicit-git"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 91,
+          "end": 92,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 93,
+          "end": 130,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 131,
+          "end": 131,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 132,
+          "end": 139,
+          "ids": [
+            "legacy-item-018"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 140,
+          "end": 148,
+          "ids": [
+            "legacy-item-019",
+            "decision-explicit-git"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 149,
+          "end": 150,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 151,
+          "end": 157,
+          "ids": [
+            "legacy-item-020",
+            "decision-explicit-git"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 158,
+          "end": 165,
+          "ids": [
+            "legacy-item-021",
+            "decision-explicit-git"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 166,
+          "end": 173,
+          "ids": [
+            "legacy-item-022",
+            "decision-explicit-git"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 174,
+          "end": 178,
+          "ids": [
+            "legacy-item-023"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        }
+      ]
+    },
+    {
+      "path": "boilerplate/.agents/skills/intent-capture/SKILL.md",
+      "source_id": "legacy-file-04",
+      "line_count": 135,
+      "disposition": "updated",
+      "sections": [
+        {
+          "start": 1,
+          "end": 5,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 6,
+          "end": 11,
+          "ids": [
+            "legacy-item-024"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 12,
+          "end": 24,
+          "ids": [
+            "legacy-item-025"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 25,
+          "end": 26,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 27,
+          "end": 43,
+          "ids": [
+            "legacy-item-026"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 44,
+          "end": 47,
+          "ids": [
+            "legacy-item-027",
+            "policy-design-02"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 48,
+          "end": 73,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 74,
+          "end": 76,
+          "ids": [
+            "legacy-item-028"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 77,
+          "end": 80,
+          "ids": [
+            "legacy-item-029"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 81,
+          "end": 95,
+          "ids": [
+            "legacy-item-030",
+            "decision-explicit-git"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 96,
+          "end": 99,
+          "ids": [
+            "legacy-item-031"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 100,
+          "end": 106,
+          "ids": [
+            "legacy-item-032",
+            "decision-explicit-git"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 107,
+          "end": 114,
+          "ids": [
+            "legacy-item-033",
+            "decision-explicit-git"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 115,
+          "end": 121,
+          "ids": [
+            "legacy-item-034"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 122,
+          "end": 127,
+          "ids": [
+            "legacy-item-035"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 128,
+          "end": 135,
+          "ids": [
+            "legacy-item-036",
+            "policy-design-02"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        }
+      ]
+    },
+    {
+      "path": "boilerplate/.agents/skills/project-bootstrap/SKILL.md",
+      "source_id": "legacy-file-05",
+      "line_count": 116,
+      "disposition": "updated",
+      "sections": [
+        {
+          "start": 1,
+          "end": 5,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 6,
+          "end": 13,
+          "ids": [
+            "legacy-item-037"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 14,
+          "end": 27,
+          "ids": [
+            "legacy-item-038",
+            "policy-design-04"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 28,
+          "end": 42,
+          "ids": [
+            "legacy-item-039"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 43,
+          "end": 66,
+          "ids": [
+            "legacy-item-040"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 67,
+          "end": 78,
+          "ids": [
+            "legacy-item-041",
+            "decision-explicit-git"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 79,
+          "end": 99,
+          "ids": [
+            "legacy-item-042",
+            "policy-design-03"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 100,
+          "end": 109,
+          "ids": [
+            "legacy-item-043"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 110,
+          "end": 116,
+          "ids": [
+            "legacy-item-044"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        }
+      ]
+    },
+    {
+      "path": "boilerplate/.agents/skills/project-structure-guide/SKILL.md",
+      "source_id": "legacy-file-06",
+      "line_count": 85,
+      "disposition": "updated",
+      "sections": [
+        {
+          "start": 1,
+          "end": 5,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 6,
+          "end": 13,
+          "ids": [
+            "legacy-item-045"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 14,
+          "end": 28,
+          "ids": [
+            "legacy-item-046",
+            "policy-design-02"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 29,
+          "end": 49,
+          "ids": [
+            "legacy-item-047",
+            "policy-design-02"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 50,
+          "end": 62,
+          "ids": [
+            "legacy-item-048",
+            "policy-design-02"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 63,
+          "end": 78,
+          "ids": [
+            "legacy-item-049",
+            "policy-design-02"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 79,
+          "end": 85,
+          "ids": [
+            "legacy-item-050"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        }
+      ]
+    },
+    {
+      "path": "boilerplate/.agents/skills/spec-authoring/SKILL.md",
+      "source_id": "legacy-file-07",
+      "line_count": 151,
+      "disposition": "updated",
+      "sections": [
+        {
+          "start": 1,
+          "end": 5,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 6,
+          "end": 11,
+          "ids": [
+            "legacy-item-051",
+            "policy-design-02"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 12,
+          "end": 17,
+          "ids": [
+            "legacy-item-052",
+            "policy-design-02"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 18,
+          "end": 29,
+          "ids": [
+            "legacy-item-053"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 30,
+          "end": 39,
+          "ids": [
+            "legacy-item-054"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 40,
+          "end": 43,
+          "ids": [
+            "legacy-item-055",
+            "policy-design-02"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 44,
+          "end": 98,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 99,
+          "end": 99,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 100,
+          "end": 106,
+          "ids": [
+            "legacy-item-056"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 107,
+          "end": 110,
+          "ids": [
+            "legacy-item-057"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 111,
+          "end": 122,
+          "ids": [
+            "legacy-item-058",
+            "decision-explicit-git"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 123,
+          "end": 124,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 125,
+          "end": 131,
+          "ids": [
+            "legacy-item-059",
+            "decision-explicit-git"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 132,
+          "end": 139,
+          "ids": [
+            "legacy-item-060",
+            "policy-design-02"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 140,
+          "end": 146,
+          "ids": [
+            "legacy-item-061"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 147,
+          "end": 151,
+          "ids": [
+            "legacy-item-062"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        }
+      ]
+    },
+    {
+      "path": "boilerplate/.github/pull_request_template.md",
+      "source_id": "legacy-file-08",
+      "line_count": 39,
+      "disposition": "updated",
+      "sections": [
+        {
+          "start": 1,
+          "end": 4,
+          "ids": [
+            "legacy-item-063"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "ids": [
+            "legacy-item-064"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 8,
+          "end": 13,
+          "ids": [
+            "legacy-item-065",
+            "policy-design-02"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 14,
+          "end": 22,
+          "ids": [
+            "legacy-item-066",
+            "policy-design-02"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 23,
+          "end": 30,
+          "ids": [
+            "legacy-item-067",
+            "policy-design-02"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 31,
+          "end": 37,
+          "ids": [
+            "legacy-item-068",
+            "decision-explicit-git"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 38,
+          "end": 39,
+          "ids": [
+            "legacy-item-069"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        }
+      ]
+    },
+    {
+      "path": "boilerplate/AGENTS.md",
+      "source_id": "legacy-file-09",
+      "line_count": 88,
+      "disposition": "updated",
+      "sections": [
+        {
+          "start": 1,
+          "end": 7,
+          "ids": [
+            "legacy-item-070",
+            "policy-design-02"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "ids": [
+            "legacy-item-071"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 12,
+          "end": 20,
+          "ids": [
+            "legacy-item-072",
+            "policy-design-02"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "ids": [
+            "legacy-item-073"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 28,
+          "end": 46,
+          "ids": [
+            "legacy-item-074",
+            "policy-design-02"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 47,
+          "end": 63,
+          "ids": [
+            "legacy-item-075",
+            "decision-explicit-git"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 64,
+          "end": 72,
+          "ids": [
+            "legacy-item-076",
+            "decision-explicit-git"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 73,
+          "end": 79,
+          "ids": [
+            "legacy-item-077"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 80,
+          "end": 88,
+          "ids": [
+            "legacy-item-078"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        }
+      ]
+    },
+    {
+      "path": "boilerplate/CHANGELOG.md",
+      "source_id": "legacy-file-10",
+      "line_count": 18,
+      "disposition": "retained",
+      "sections": [
+        {
+          "start": 1,
+          "end": 14,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 15,
+          "end": 15,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 16,
+          "end": 16,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 17,
+          "end": 17,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 18,
+          "end": 18,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        }
+      ]
+    },
+    {
+      "path": "boilerplate/CLAUDE.md",
+      "source_id": "legacy-file-11",
+      "line_count": 38,
+      "disposition": "updated",
+      "sections": [
+        {
+          "start": 1,
+          "end": 4,
+          "ids": [
+            "legacy-item-079"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "ids": [
+            "legacy-item-080"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 10,
+          "end": 26,
+          "ids": [
+            "legacy-item-081",
+            "policy-design-03"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 27,
+          "end": 34,
+          "ids": [
+            "legacy-item-082",
+            "decision-explicit-git"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        },
+        {
+          "start": 35,
+          "end": 38,
+          "ids": [
+            "legacy-item-083",
+            "decision-explicit-git"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 원문을 이전하고 현행 규칙과의 대체 관계를 연결했다. 과거 승인 여부는 만들지 않았다."
+        }
+      ]
+    },
+    {
+      "path": "boilerplate/README.md",
+      "source_id": "legacy-file-12",
+      "line_count": 74,
+      "disposition": "updated",
+      "sections": [
+        {
+          "start": 1,
+          "end": 17,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 18,
+          "end": 21,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 22,
+          "end": 25,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 26,
+          "end": 53,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 54,
+          "end": 74,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        }
+      ]
+    },
+    {
+      "path": "boilerplate/docs/templates/adr.md",
+      "source_id": "legacy-file-13",
+      "line_count": 22,
+      "disposition": "archived",
+      "sections": [
+        {
+          "start": 1,
+          "end": 11,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 18,
+          "end": 20,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 21,
+          "end": 22,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        }
+      ]
+    },
+    {
+      "path": "boilerplate/docs/templates/intent.md",
+      "source_id": "legacy-file-14",
+      "line_count": 31,
+      "disposition": "archived",
+      "sections": [
+        {
+          "start": 1,
+          "end": 10,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 18,
+          "end": 20,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 21,
+          "end": 24,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 25,
+          "end": 27,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 28,
+          "end": 31,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        }
+      ]
+    },
+    {
+      "path": "boilerplate/docs/templates/plan.md",
+      "source_id": "legacy-file-15",
+      "line_count": 34,
+      "disposition": "archived",
+      "sections": [
+        {
+          "start": 1,
+          "end": 10,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 21,
+          "end": 26,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 32,
+          "end": 34,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        }
+      ]
+    },
+    {
+      "path": "boilerplate/docs/templates/spec.md",
+      "source_id": "legacy-file-16",
+      "line_count": 55,
+      "disposition": "archived",
+      "sections": [
+        {
+          "start": 1,
+          "end": 9,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 13,
+          "end": 16,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 17,
+          "end": 20,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 21,
+          "end": 24,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 25,
+          "end": 26,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 27,
+          "end": 30,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 31,
+          "end": 34,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 35,
+          "end": 39,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 40,
+          "end": 44,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 45,
+          "end": 51,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 52,
+          "end": 55,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        }
+      ]
+    },
+    {
+      "path": "boilerplate/docs/why-this-structure.md",
+      "source_id": "legacy-file-17",
+      "line_count": 247,
+      "disposition": "archived",
+      "sections": [
+        {
+          "start": 1,
+          "end": 6,
+          "ids": [
+            "legacy-item-084"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 7,
+          "end": 23,
+          "ids": [
+            "legacy-item-085"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 24,
+          "end": 35,
+          "ids": [
+            "legacy-item-086"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 36,
+          "end": 54,
+          "ids": [
+            "legacy-item-087"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 55,
+          "end": 74,
+          "ids": [
+            "legacy-item-088"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 75,
+          "end": 95,
+          "ids": [
+            "legacy-item-089"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 96,
+          "end": 118,
+          "ids": [
+            "legacy-item-090"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 119,
+          "end": 147,
+          "ids": [
+            "legacy-item-091"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 148,
+          "end": 168,
+          "ids": [
+            "legacy-item-092"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 169,
+          "end": 191,
+          "ids": [
+            "legacy-item-093"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 192,
+          "end": 206,
+          "ids": [
+            "legacy-item-094"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 207,
+          "end": 226,
+          "ids": [
+            "legacy-item-095"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 227,
+          "end": 247,
+          "ids": [
+            "legacy-item-096"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        }
+      ]
+    },
+    {
+      "path": "docs/superpowers/plans/2026-09-11-project-bootstrap-prompt.md",
+      "source_id": "legacy-file-18",
+      "line_count": 134,
+      "disposition": "archived",
+      "sections": [
+        {
+          "start": 1,
+          "end": 12,
+          "ids": [
+            "legacy-item-097"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 13,
+          "end": 24,
+          "ids": [
+            "legacy-item-098"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 25,
+          "end": 44,
+          "ids": [
+            "legacy-item-099"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 45,
+          "end": 52,
+          "ids": [],
+          "disposition": "example",
+          "reason": "문서 양식·가상 로그인 예시이며 실제 설계나 승인이 아니다."
+        },
+        {
+          "start": 53,
+          "end": 66,
+          "ids": [
+            "legacy-item-100"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 67,
+          "end": 99,
+          "ids": [
+            "legacy-item-101"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 100,
+          "end": 134,
+          "ids": [
+            "legacy-item-102"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        }
+      ]
+    },
+    {
+      "path": "docs/superpowers/specs/2026-09-11-project-bootstrap-prompt-design.md",
+      "source_id": "legacy-file-19",
+      "line_count": 62,
+      "disposition": "archived",
+      "sections": [
+        {
+          "start": 1,
+          "end": 2,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 3,
+          "end": 6,
+          "ids": [
+            "legacy-item-103"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 7,
+          "end": 20,
+          "ids": [
+            "legacy-item-104"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 21,
+          "end": 22,
+          "ids": [],
+          "disposition": "context",
+          "reason": "제목·탐색 안내·메타데이터·빈 상태로, 독립 설계 결정이 아니다. 원문은 보존한다."
+        },
+        {
+          "start": 23,
+          "end": 26,
+          "ids": [
+            "legacy-item-105"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 27,
+          "end": 30,
+          "ids": [
+            "legacy-item-106"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 31,
+          "end": 34,
+          "ids": [
+            "legacy-item-107"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 35,
+          "end": 44,
+          "ids": [
+            "legacy-item-108"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 45,
+          "end": 52,
+          "ids": [
+            "legacy-item-109"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 53,
+          "end": 59,
+          "ids": [
+            "legacy-item-110"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        },
+        {
+          "start": 60,
+          "end": 62,
+          "ids": [
+            "legacy-item-111"
+          ],
+          "disposition": "mapped",
+          "reason": "당시 항목을 proposed로 이전했다. 실제 승인·적용 여부는 원본과 출처를 추가 확인한다."
+        }
+      ]
+    }
+  ]
+}

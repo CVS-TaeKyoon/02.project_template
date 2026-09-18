@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "user-implementation-approval",
+  "kind": "user_approval",
+  "locator": {
+    "description": "이 대화에서 직전 조사·권장안에 대한 사용자의 답변. 대상은 저장소와 boilerplate 동시 적용 및 명시적 Git 요청 정책이다. 실제 메시지 ID·시각은 제공되지 않았다.",
+    "path": null,
+    "commit": null,
+    "message_id": null,
+    "date": null
+  },
+  "content": "질문: 이 권장안대로 저장소 자체와 `boilerplate`에 함께 적용하고, 자동 커밋 규칙도 명시적 요청 방식으로 변경해도 될까요?\n사용자 답변: 네 진행해주세요\n승인 대상: 직전 권장안의 design/ 저장 구조, 공통 검사 도구, 기존 문서 보존·대응표 이전, 기존 비충돌 규칙 유지. 세부 구현의 모든 미래 제안이나 과거 항목의 승인을 뜻하지 않는다.",
+  "approvals": [
+    {
+      "id": "decision-storage-layout",
+      "revision": 1,
+      "scope": "설계 저장 구조와 적용 범위"
+    },
+    {
+      "id": "decision-explicit-git",
+      "revision": 1,
+      "scope": "로컬 저장과 커밋·push 분리"
+    },
+    {
+      "id": "decision-preserve-conventions",
+      "revision": 1,
+      "scope": "충돌하지 않는 기존 규칙 유지"
+    }
+  ]
+}

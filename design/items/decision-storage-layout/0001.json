@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "decision-storage-layout",
+  "revision": 1,
+  "kind": "decision",
+  "status": "accepted",
+  "title": "설계 저장 구조와 적용 범위",
+  "content": "루트 design/에 항목별 revision JSON, 출처, 분야별 원본 목록, 현재 작업 상태, 이전 대응표와 재생성 가능한 색인을 둔다. 공통 JSON Schema와 검사 도구는 boilerplate/.agents/design-data/ 한 곳에 두고 저장소 자체에서도 재사용한다. boilerplate에는 운영 규칙과 빈 초기 상태만 제공하며 이 저장소의 개별 설계·대화·승인 이력은 복사하지 않는다.",
+  "rationale": "사용자가 조사 후 제시한 저장소와 boilerplate 동시 적용 권장안을 승인했다.",
+  "exceptions": [],
+  "source_refs": [
+    "user-implementation-approval"
+  ],
+  "approval_source": "user-implementation-approval",
+  "relations": [
+    {
+      "type": "depends_on",
+      "target": "policy-design-02",
+      "revision": 1,
+      "reason": "기준 원본을 분야별로 한 곳에 둔다."
+    }
+  ],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

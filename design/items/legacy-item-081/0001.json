@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-081",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "파이프라인 스킬",
+  "content": "## 파이프라인 스킬\n\n| 단계 | 스킬 | 산출물 |\n|---|---|---|\n| 왜 만드는가 | `intent-capture` | `docs/intent/NNN-슬러그.md` |\n| 무엇을 만족해야 하는가 | `spec-authoring` | `docs/specs/NNN-슬러그.md` |\n| 어떤 파일을 어떤 순서로 | `implementation-plan` | `docs/plans/NNN-슬러그.md` |\n\n무엇을 왜 만들지가 아직 문서로 고정되지 않았다면 `intent-capture`부터 시작한다.\n\n이 셋 말고 **안내 스킬** 둘이 더 있다. 파이프라인 단계가 아니라 구조 자체를 다룬다.\n\n| 스킬 | 언제 |\n|---|---|\n| `project-structure-guide` | 구조·규칙이 궁금할 때. 읽기만 하고 아무것도 바꾸지 않는다 |\n| `project-bootstrap` | 새 프로젝트의 초기 설정. 한 번 쓰고 스스로 삭제한다 |",
+  "rationale": "boilerplate/CLAUDE.md:10–26에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-11"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

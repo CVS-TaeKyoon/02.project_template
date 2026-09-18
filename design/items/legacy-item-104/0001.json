@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-104",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "Requirements",
+  "content": "## Requirements\n\n- 사용자가 복사해 넣을 완성형 시작 프롬프트를 제공한다.\n- 프롬프트는 프로젝트를 만들 상위 폴더 경로, 프로젝트 이름, 프로젝트 목적을 이 순서로 하나씩 질문한다.\n- 템플릿 원본은 `https://github.com/CVS-TaeKyoon/02.project_template`의 `boilerplate` 디렉터리다.\n- 새 프로젝트는 `<상위 폴더>\\\\<프로젝트 이름>`에 만든다. 대상 폴더가 이미 있으면 덮어쓰지 않고 다른 경로 또는 이름을 묻는다.\n- Git을 사용할 수 있으면 저장소를 가져오고, 없으면 GitHub ZIP을 내려받아 같은 결과를 만든다. 템플릿 저장소의 `.git` 메타데이터는 새 프로젝트에 포함하지 않는다.\n- Markdown 파일에서 `<프로젝트 이름>` 자리표시자를 프로젝트 이름으로 치환한다. `README.md`와 `AGENTS.md`의 프로젝트 설명 자리에는 프로젝트 목적을 반영한다.\n- 템플릿 복사 뒤 GitHub 업로드 여부를 묻는다. 사용자가 최종 승인하기 전에는 원격 저장소를 만들거나 push하지 않는다.\n- GitHub 업로드는 GitHub CLI(`gh`)가 설치되고 GitHub 로그인 상태일 때만 진행한다. 설치 또는 로그인이 되지 않았으면 공식 설치·로그인 화면을 안내하고 업로드는 중단한다.\n- GitHub 업로드 전에 저장소 이름과 공개 여부를 한 번에 하나씩 묻고 최종 확인을 받는다.\n- API 키, 토큰, 비밀번호, `.env` 파일은 채팅에 요구하거나 GitHub에 올리지 않는다.\n- 사용자는 터미널 명령을 입력하거나 파일을 직접 수정하지 않는다.",
+  "rationale": "docs/superpowers/specs/2026-09-11-project-bootstrap-prompt-design.md:7–20에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-19"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}
