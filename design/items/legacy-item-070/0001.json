@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-070",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "AGENTS.md",
+  "content": "# AGENTS.md\n\n이 파일이 이 프로젝트의 **단일 기준(SSOT)** 이다. 도구별 파일(CLAUDE.md 등)은 이 파일을 참조하고,\n자기 도구에만 해당하는 매핑만 추가한다. 같은 규칙을 두 곳에 쓰지 않는다.\n\n규칙이 **왜** 그런지는 `docs/why-this-structure.md`에 있다. 규칙을 바꾸거나 없애기 전에 그 근거를 확인한다.",
+  "rationale": "boilerplate/AGENTS.md:1–7에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-09"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-011",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "도구가 만드는 계획 파일과 plan.md는 다른 것이다",
+  "content": "## 도구가 만드는 계획 파일과 plan.md는 다른 것이다\n\n이 구분을 놓치면 스킬 전체가 무의미해진다.\n\n| | 도구가 자동 저장하는 계획 파일 | plan.md |\n|---|---|---|\n| 위치 | 도구의 개인 설정 폴더 | 레포의 `docs/plans/` |\n| 성격 | 세션 작업 데이터 | 커밋되는 산출물 |\n| 수명 | 보존 기간 후 자동 삭제 | git이 영구 보존 |\n| 공유 | 개인 머신에만 존재 | 팀 전체가 읽음 |\n| 승인 기록 | 없음 | 커밋/PR이 곧 기록 |\n\n에이전트의 계획 모드는 계획을 **만드는 도구**고, plan.md는 그중 승인된 버전을 **레포로 승격시킨 것**이다. 자동 저장은 초안까지 전부 포함하지만, 남아야 하는 건 심문을 거쳐 확정된 하나다.\n\n도구에 따라 그 저장 경로를 프로젝트 안으로 돌릴 수도 있다. 다만 그렇게 해도 **승인 시점에 커밋하는 행위는 별도로 필요하다.**",
+  "rationale": "boilerplate/.agents/skills/implementation-plan/SKILL.md:12–27에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-03"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

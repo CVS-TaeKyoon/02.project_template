@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-101",
+  "revision": 1,
+  "kind": "plan",
+  "status": "proposed",
+  "title": "Task 2: 비개발자용 사용 안내 작성",
+  "content": "### Task 2: 비개발자용 사용 안내 작성\n\n**Files:**\n- Create: `README.md`\n- Test: Markdown 링크와 사용 흐름 문자열 검사\n\n**Interfaces:**\n- Consumes: `START_PROJECT_PROMPT.md`\n- Produces: 저장소 첫 화면에서 보이는 간결한 사용 안내\n\n- [ ] **Step 1: 루트 README가 없는 상태를 확인한다**\n\nRun: `Test-Path -LiteralPath README.md`\n\nExpected: `False`\n\n- [ ] **Step 2: `README.md`를 작성한다**\n\n문서에는 템플릿의 용도, `START_PROJECT_PROMPT.md`를 열어 전체 내용을 Codex 채팅에 붙여넣는 단일 사용 방법, Codex가 이후 질문을 하나씩 한다는 점, 생성 프로젝트에는 `boilerplate` 내용만 들어간다는 점을 적는다. GitHub 업로드는 `gh` 설치와 로그인 뒤 사용자 승인을 받아서만 수행된다고 적는다.\n\n- [ ] **Step 3: 안내 문서의 핵심 연결을 검증한다**\n\nRun: `@('START_PROJECT_PROMPT.md','하나씩','GitHub CLI','boilerplate') | ForEach-Object { if (-not (Select-String -LiteralPath README.md -Pattern ([regex]::Escape($_)) -Quiet)) { throw \"README에 필수 안내가 없습니다: $_\" } }`\n\nExpected: 오류 없이 종료\n\n- [ ] **Step 4: 변경을 커밋한다**\n\n```powershell\ngit add README.md\ngit commit -m \"docs: 프로젝트 시작 방법 안내\"\n```",
+  "rationale": "docs/superpowers/plans/2026-09-11-project-bootstrap-prompt.md:67–99에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-18"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

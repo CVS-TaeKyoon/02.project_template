@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-060",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "팀",
+  "content": "### 팀\n\n- **스펙은 Product Owner가 쓰지 않고 리뷰한다.** 에이전트가 쓰고 PO는 \"이 스펙이 원래 문제를 푸는가\"를 본다.\n- Concerns는 **엔지니어링에 넘기기 전에** 각 판단 주체와 해소한다. 미해결 Concern을 안고 plan으로 넘어가면 구현 중에 되돌아온다.\n- 승인은 PR 머지로 기록한다. 상태 줄은 `draft`로 시작해 리뷰 승인 후 **머지 전에** `approved`로 바꾼다.\n- 리스크가 높다고 분류된 변경은 PO 혼자 결정하지 말고 테크리드나 아키텍트를 끌어들여라. 무엇을 \"높은 리스크\"로 볼지는 조직이 미리 정해두는 게 좋다.\n- 운영이 안정되면 이 단계를 자동화할 수 있다. intent PR이 머지되는 순간 비대화형 잡이 돌아 spec.md PR을 생성하게 만들면, PO의 첫 개입 지점이 리뷰가 된다. 다만 **처음부터 자동화하지 마라.** 손으로 몇 번 돌려서 프롬프트와 정책 스킬이 안정된 뒤에 붙인다.",
+  "rationale": "boilerplate/.agents/skills/spec-authoring/SKILL.md:132–139에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-07"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

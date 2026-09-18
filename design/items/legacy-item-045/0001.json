@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-045",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "프로젝트 구조 안내",
+  "content": "# 프로젝트 구조 안내\n\n이 프로젝트의 구조에 대한 질문에 답한다. **아무것도 수정하지 않는다.**\n\n사용자는 이 구조를 미리 공부하고 온 사람이 아니다. 쓰면서 익히는 중이며, 그래서 질문이\n단편적으로 들어온다. 한 번에 전체를 가르치려 하지 말고 **물어본 것에 답한 뒤 바로 다음에 알\n법한 것 하나만** 덧붙여라.",
+  "rationale": "boilerplate/.agents/skills/project-structure-guide/SKILL.md:6–13에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-06"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

@@ -3,10 +3,10 @@
  이 파일은 템플릿 골격이다. 프로젝트를 시작할 때 다음을 하고 이 주석을 지운다.
 
  1. 아래 <프로젝트 이름>, <채울 것> 자리를 채운다
- 2. AGENTS.md 의 "## 프로젝트" 절과 "## 하지 말 것" 마지막 항목을 채운다
+ 2. design/registry.json과 목적 항목을 먼저 기록하고 AGENTS.md의 원본 탐색 안내를 유지한다
  3. .github/CODEOWNERS 의 팀·계정 이름을 실제 조직 것으로 바꾼다
  4. .codex/config.toml 에 팀이 쓸 설정을 넣는다 (공식 문서 확인 후)
- 5. 원격 호스트가 GitLab이면 .github/ 를 .gitlab/ 로 바꾸고 파일명을 맞춘다
+ 5. 원격 호스트가 다르면 해당 호스트의 공식 규격을 확인한 뒤 필요한 파일만 조정한다
  6. .agents/skills/ 에 팀의 정책 스킬을 추가한다 — 단, 처음부터 만들지 않는다.
     반복해서 지적하게 되는 규칙이 생겼을 때 승격시킨다.
 
@@ -33,42 +33,43 @@
    .\.agents\sync-skills.ps1 -Check
    ```
 
-2. Codex를 쓴다면 이 프로젝트를 **신뢰(trust)로 표시한다**
+2. Codex 프로젝트 설정이 필요하면 에이전트에게 현재 공식 지침을 확인하도록 요청한다.
 
-   표시하기 전에는 `.codex/` 설정이 전부 무시된다. 이 단계를 빠뜨리면
-   "설정이 안 먹는다"는 문의가 반복된다.
+   신뢰 설정과 프로젝트 설정의 적용 조건은 사용하는 도구 버전에서 확인한다.
+   과거 구조 설명만으로 현재 동작을 단정하지 않는다.
 
-3. `AGENTS.md`를 훑어본다 — 작업 규칙은 전부 여기 있다. **지금 다 이해하지 못해도 된다.**
+3. `AGENTS.md`를 훑어본다 — 운영 규칙과 설계 원본을 찾는 방법이 있다. **지금 다 이해하지 못해도 된다.**
 
 4. **나머지는 미리 공부하지 않아도 된다. AI 에이전트에게 물어보면 된다.**
 
    | 이렇게 물어보면 | 이런 답이 온다 |
    |---|---|
    | "이 프로젝트 구조 설명해줘" | 무엇이 어디에 있고, 어떤 순서로 일하는지 |
-   | "docs/specs에 뭘 써야 해?" | 그 자리에 담는 것과 담지 않는 것 |
+   | "설계는 어디에 저장해?" | JSON 원본과 요청형 문서의 차이 |
    | "왜 스킬이 두 폴더에 있어?" | 그렇게 정한 이유와, 바꿔도 되는지 여부 |
 
    막히는 지점에서 그때그때 물어보는 것이 이 구조의 사용법이다.
-   규칙의 근거는 `docs/why-this-structure.md`에 있다.
+   현재 결정의 근거는 `design/`에서 확인하고, 과거 구조 설명은 보관 자료로 참고한다.
 
 ## 문서 위치
 
 | 위치 | 담는 것 |
 |---|---|
-| `AGENTS.md` | 작업 규칙의 단일 기준. 규칙이 바뀌면 여기를 고친다 |
+| `AGENTS.md` | 운영 규칙과 원본 탐색 진입점 |
+| `design/registry.json` | 분야별 기준 원본과 공통 제약 위치 |
+| `design/items/`, `design/sources/` | 설계 항목의 revision과 출처·승인 근거 |
+| `design/work-state.json`, `design/index.json` | 현재 작업 상태와 재생성 가능한 검색 색인 |
+| `design/migration-map.json` | 기존 문서와 새 설계 ID의 대응표 |
 | `CLAUDE.md` | 위 파일을 참조하고 Claude Code 매핑만 덧붙인다 |
-| `docs/why-this-structure.md` | 구조를 왜 그렇게 정했는지. 에이전트가 이 파일을 근거로 설명한다 |
-| `docs/intent/` | 왜 만드는가 (`NNN-슬러그.md`) |
-| `docs/specs/` | 무엇을 만족해야 하는가 (intent와 같은 번호·슬러그) |
-| `docs/plans/` | 어떤 파일을 어떤 순서로 (intent와 같은 번호·슬러그) |
-| `docs/decisions/` | 되돌리기 어려운 결정과 그 이유 (`ADR-NNN-제목.md`) |
-| `docs/conventions/` | 브랜치·커밋·코드 네이밍 등 길어지는 규약. AGENTS.md에는 요약만 둔다 |
-| `docs/templates/` | 사람이 직접 문서를 쓸 때 쓰는 빈 양식. 에이전트는 스킬의 템플릿을 쓴다 |
+| `docs/why-this-structure.md` | 이전 구조의 근거를 보존한 자료. 현재 규칙과 구분한다 |
+| `docs/intent/`, `docs/specs/`, `docs/plans/`, `docs/decisions/` | 요청받았을 때만 만드는 파생 문서 또는 기존 보관 문서 |
+| `docs/conventions/` | 기존 규약 보관 자료. 현재 기준 원본은 registry에서 확인한다 |
+| `docs/templates/` | 요청형 사람용 문서에 사용할 기존 양식 |
 | `.agents/skills/` | 스킬 원본. 수정은 항상 여기서 한다 |
 | `.claude/skills/` | 위 폴더의 미러. 생성물이므로 직접 수정하지 않는다 |
-| `CHANGELOG.md` | 배포된 것을 사람이 읽을 수 있게. 각 항목에 작업 번호를 단다 |
-| `.codex/` | Codex 프로젝트 설정. 신뢰(trust) 표시 전까지 적용되지 않는다 |
-| `.github/` | PR 템플릿과 CODEOWNERS. 원격 호스트가 이 경로에서만 인식한다 (GitLab이면 `.gitlab/`) |
+| `CHANGELOG.md` | 요청 시 생성·갱신하는 파생 변경 설명 |
+| `.codex/` | Codex 프로젝트 설정. 실제 적용 조건은 사용 환경의 공식 지침에서 확인한다 |
+| `.github/` | 이 템플릿의 GitHub용 PR 양식과 CODEOWNERS. 다른 호스트로 옮길 때는 해당 호스트 규격을 확인한다 |
 | `.gitignore` `.gitattributes` | 개인 설정 제외 규칙과 줄바꿈 정규화 |
 
 작업 규칙은 `README.md`가 아니라 `AGENTS.md`에 쓴다.

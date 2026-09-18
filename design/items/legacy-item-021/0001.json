@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-021",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "팀",
+  "content": "### 팀\n\n- plan.md는 **PR로 올린다.** 코드 PR과 분리하면 계획만 먼저 리뷰받을 수 있다. 리스크가 높은 변경일수록 이 분리가 값어치를 한다.\n- 일상적인 변경은 담당 엔지니어가 승인하고, 조직이 고위험으로 분류한 변경은 테크리드나 아키텍트가 본다.\n- 나중에 PR 리뷰에서 **diff가 plan.md와 일치하는지**를 검사 항목으로 넣어라. 원격 호스트의 PR 템플릿(`.github/pull_request_template.md`, GitLab이면 `.gitlab/` 아래)에 \"변경이 spec.md, plan.md와 일치하는가\"를 체크 항목으로 두면 된다.\n- 병렬 작업으로 넘어갈 때 이 문서가 더 중요해진다. 세션마다 별도 worktree를 쓰면 서로의 컨텍스트를 전혀 모르므로, 공유되는 건 `AGENTS.md`와 작업별 spec·plan뿐이다. 병렬 세션은 두세 개부터 시작하라 — 한계는 모델이 아니라 **사람이 제대로 리뷰할 수 있는 흐름의 수**다.\n- Order of work를 파일이 겹치지 않는 단위로 쪼개면 그대로 병렬 분배 계획이 된다. 겹치는 작업은 한 세션에서 순차로 처리한다.",
+  "rationale": "boilerplate/.agents/skills/implementation-plan/SKILL.md:158–165에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-03"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

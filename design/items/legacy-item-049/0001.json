@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-049",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "자주 나오는 질문",
+  "content": "## 자주 나오는 질문\n\n**\"스킬이 왜 두 폴더에 똑같이 있나요?\"** — 도구마다 읽는 경로가 달라서다. 수정은 항상\n`.agents/skills/`에서 하고 동기화 스크립트를 돌린다. 미러를 직접 고치면 다음 동기화 때 사라진다.\n근거는 `docs/why-this-structure.md`의 \"스킬이 두 폴더에 중복으로 들어 있는 이유\".\n\n**\"문서를 세 개나 써야 하나요?\"** — 규모가 작으면 합치거나 건너뛸 수 있다. 다만 건너뛰는 판단을\n매번 의식적으로 해야 한다. 근거는 \"문서를 intent → spec → plan 셋으로 나누는 이유\". 여기서 \"귀찮다\"는 반응이 나오면 규칙을 강요하지 말고\n**되돌리는 비용** 이야기를 하라 — 문단을 고치는 것과 코드를 버리는 것의 차이다.\n\n**\"이 폴더 안 쓰면 지워도 되나요?\"** — `docs/` 아래는 대체로 조정 가능하고, 루트의 도구 관련\n항목은 옮기면 도구가 조용히 동작을 멈춘다. \"루트에 있는 것과 `docs/` 아래로 내린 것\"의 표로 답하라.\n\n**\"설정이 안 먹어요\"** — Codex는 프로젝트를 신뢰(trust)로 표시하기 전까지 `.codex/` 설정을 전부\n무시한다. 이 질문의 가장 흔한 원인이다.",
+  "rationale": "boilerplate/.agents/skills/project-structure-guide/SKILL.md:63–78에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-06"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

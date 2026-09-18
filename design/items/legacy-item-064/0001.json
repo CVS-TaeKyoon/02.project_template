@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-064",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "무엇을",
+  "content": "## 무엇을\n<!-- 한 문장 -->",
+  "rationale": "boilerplate/.github/pull_request_template.md:5–7에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-08"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

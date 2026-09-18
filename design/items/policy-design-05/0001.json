@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "policy-design-05",
+  "revision": 1,
+  "kind": "constraint",
+  "status": "accepted",
+  "title": "승인 범위에 맞춘 업데이트",
+  "content": "5. 내가 \"업데이트해줘\"라고 요청하면\n\n- 대화에서 새로 발생한 사항을 추출한다.\n- 최신 원본과 비교하여 추가·변경·충돌을 식별한다.\n- 명시적으로 승인된 내용만 accepted로 기록한다.\n- 업데이트 요청 자체를 모든 제안에 대한 승인으로 해석하지 않는다.\n- 미확정 사항은 proposed 또는 미결 항목으로 보존한다.\n- 기존 결정과 충돌하거나 의미가 불명확하면 먼저 질문한다.\n- 원본, 변경 이력, 관계, 색인, 작업 상태를 함께 갱신한다.\n- 저장 후 재조회하고 검증한다.\n- 실제 저장 성공 시에만 완료를 보고한다.",
+  "rationale": "대화 기억에 의존하지 않고 결정·이유·예외를 보존하기 위한 사용자의 명시적 운영 지시.",
+  "exceptions": [],
+  "source_refs": [
+    "user-design-principles"
+  ],
+  "approval_source": "user-design-principles",
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

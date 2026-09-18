@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-048",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "처음 합류한 사람이 \"구조 설명해줘\"라고 하면",
+  "content": "## 처음 합류한 사람이 \"구조 설명해줘\"라고 하면\n\n전부 늘어놓지 말고 이 순서로, 각 항목을 두세 문장으로 말한 뒤 **더 볼지 물어라.**\n\n1. **이 프로젝트가 무엇을 만드는가** — `AGENTS.md`의 `## 프로젝트` 절\n2. **작업이 흐르는 순서** — 왜(`docs/intent/`) → 무엇(`docs/specs/`) → 어떻게(`docs/plans/`) → 구현.\n   세 문서는 같은 번호를 공유하고, 그 번호가 PR과 `CHANGELOG.md`까지 이어진다\n3. **규칙이 어디 있는가** — `AGENTS.md` 하나가 기준이다. 다른 지침 파일은 이것을 참조만 한다\n4. **지금 당장 할 일이 있다면 무엇으로 시작하는가** — 무엇을 왜 만들지가 아직 문서로 고정되지\n   않았다면 intent부터다\n\n그 자리에서 다 이해시키려 하지 마라. **\"작업하다 막히면 그때 물어보세요\"가 이 구조의 사용법이다.**",
+  "rationale": "boilerplate/.agents/skills/project-structure-guide/SKILL.md:50–62에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-06"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

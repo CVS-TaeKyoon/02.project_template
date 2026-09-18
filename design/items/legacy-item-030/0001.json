@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-030",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "4. 저장하고 커밋한다",
+  "content": "### 4. 저장하고 커밋한다\n\n`docs/intent/` 폴더에 저장한다. 파일명은 `NNN-슬러그.md` 형식으로, 번호는 기존 파일 중 가장 큰 번호 다음을 쓴다.\n\n```\ndocs/intent/\n├── 001-claims-status.md\n├── 002-social-login.md\n└── 003-slow-dashboard.md\n```\n\n작성자와 타임스탬프는 git이 기록하므로 문서 안에서 따로 관리하지 않는다. 상단의 `작성자 · 상태` 줄만 예외다 — 발의자가 git을 쓰지 않는 사람일 수 있어 커밋 작성자와 다르고, 상태 줄은 다음 단계의 스킬이 진행해도 되는지를 판단하는 근거다.\n\n커밋 메시지는 `intent: 간편 로그인 개선` 형태로 통일한다.",
+  "rationale": "boilerplate/.agents/skills/intent-capture/SKILL.md:81–95에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-04"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

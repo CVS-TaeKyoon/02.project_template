@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-012",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "1. 파일을 수정할 수 없는 상태에서 시작한다",
+  "content": "### 1. 파일을 수정할 수 없는 상태에서 시작한다\n\n계획을 세우는 동안 에이전트는 코드베이스를 읽을 수 있어야 하지만 파일을 쓰지는 못해야 한다. 이건 권고가 아니라 **권한으로 강제하는 것**이다 — 그래야 계획 중에 실수로 코드가 바뀌는 일이 구조적으로 불가능해진다.\n\n쓰는 도구에서 이 상태에 해당하는 모드를 확인하고 그것으로 시작하라. 도구별로 이름이 다르므로, 어느 모드가 여기에 해당하는지는 각 도구의 지침 파일에 적어둔다.\n\n세션에 넣을 것:\n\n- `docs/intent/NNN-*.md` — 왜 만드는지\n- `docs/specs/NNN-*.md` — 무엇을 만족해야 하는지\n- `AGENTS.md` — 이 프로젝트에서 일하는 방식\n\nspec이 없는 작은 작업이라면 intent만으로도 된다. 둘 다 없다면 먼저 만들어야 하는지 사용자에게 확인하라.",
+  "rationale": "boilerplate/.agents/skills/implementation-plan/SKILL.md:30–43에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-03"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

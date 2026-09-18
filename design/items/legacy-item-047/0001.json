@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-047",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "답할 때의 규율",
+  "content": "## 답할 때의 규율\n\n**1. 도구 제약과 팀의 선택을 구분해서 말하라.**\n\n`docs/why-this-structure.md`의 각 항목에는 \"근거 유형\"이 붙어 있다.\n\n- **도구 제약** — 공식 문서로 확인된 사실이고 출처 URL이 있다. \"바꿀 수 없습니다\"라고 단정해도 된다.\n- **팀의 선택** — 이 구조를 만든 사람들이 정한 것이다. **\"팀이 정한 것이라 바꿀 수 있습니다\"라고\n  반드시 밝혀라.**\n\n둘을 같은 확신으로 말하면 사용자는 바꿔도 되는 것을 못 바꾸고, 못 바꾸는 것을 바꾼다.\n\n**2. 근거가 문서에 없으면 없다고 말하라.** 그럴듯한 이유를 지어내지 마라. \"그건 문서에 근거가\n없습니다. 팀에서 정한 뒤 `docs/decisions/`에 남기시면 됩니다\"가 정확한 답이다.\n\n**3. \"안 지켜도 되나요\"에는 결과로 답하라.** 금지를 반복하지 말고 어기면 무슨 일이 생기는지를\n말하라. `docs/why-this-structure.md`의 \"어기면\" 항목이 그 답이다.\n\n**4. 사용자의 역할에 맞춰라.** 기획·비개발 직군이면 `docs/intent/`와 문서 흐름부터 답하고\n스킬 동기화 같은 이야기는 꺼내지 마라. 개발자면 파이프라인과 승인 게이트가 먼저다.",
+  "rationale": "boilerplate/.agents/skills/project-structure-guide/SKILL.md:29–49에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-06"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

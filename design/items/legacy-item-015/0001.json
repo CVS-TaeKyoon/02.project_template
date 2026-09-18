@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-015",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "4. 합격 기준: 낯선 사람 테스트",
+  "content": "### 4. 합격 기준: 낯선 사람 테스트\n\n**이 대화를 한 번도 보지 않은 엔지니어가 plan.md만 읽고 구현할 수 있는가?**\n\n이게 왜 중요하냐면, 실제로 구현하는 건 그 대화를 못 본 다른 세션이나 서브에이전트이기 때문이다. 에이전트는 세션 간 기억을 공유하지 않는다. plan.md는 제로에서 시작하는 상대에게 맥락을 통째로 넘기는 장치다.\n\n계획을 다 쓴 뒤 스스로 점검하라. \"이 문장은 아까 대화에서 나온 배경을 알아야 이해되는가?\" 그렇다면 그 배경을 문서에 적어라.",
+  "rationale": "boilerplate/.agents/skills/implementation-plan/SKILL.md:65–72에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-03"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

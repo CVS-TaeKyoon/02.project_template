@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-109",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "Error Handling",
+  "content": "## Error Handling\n\n- 대상 폴더가 있으면 중단하고 새 경로 또는 이름을 요청한다.\n- 템플릿을 가져오지 못하면 부분 생성물을 정리하지 않고, 실패 원인과 재시도 방법만 알린다.\n- `gh`가 없거나 로그아웃 상태이면 업로드만 중단한다. 로컬 프로젝트는 보존한다.\n- 민감 파일이 발견되면 업로드를 멈추고 제외 여부를 사용자에게 알린다.\n- 기존 원격 저장소·로컬 폴더·파일을 삭제하거나 덮어쓰지 않는다.",
+  "rationale": "docs/superpowers/specs/2026-09-11-project-bootstrap-prompt-design.md:45–52에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-19"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

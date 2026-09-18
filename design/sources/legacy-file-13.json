@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "legacy-file-13",
+  "kind": "legacy_file",
+  "locator": {
+    "description": "초기 이전 전 원문. 원래 파일 SHA256: 229037ddc5679542efae0fe743200dde3913110fb774edeb1b5515352efbe088",
+    "path": "boilerplate/docs/templates/adr.md",
+    "commit": "2106763acd6475b99868e59bcb545a03d0a42d74",
+    "message_id": null,
+    "date": null
+  },
+  "content": "# ADR-NNN: <결정을 한 문장으로>\n상태: accepted · 관련 작업: docs/plans/NNN-슬러그.md\n\n<!--\n되돌리기 어렵고 나중에 \"왜 이렇게 했지?\"가 나올 결정만 남긴다.\n되돌리기 쉬운 것은 쓰지 않는다 — 모든 결정을 기록하면 아무도 읽지 않는다.\n번호는 파이프라인과 공유하지 않는 자체 연속 번호다.\n결정을 뒤집을 때 이 문서를 고치지 않는다. 새 ADR을 쓰고 이것을 superseded로 표시한다.\n상태 표기: accepted / superseded by ADR-NNN / deprecated\n-->\n\n## Context\n<!-- 어떤 상황에서 이 결정이 필요했는가. 제약은 무엇이었는가. -->\n\n## Decision\n<!-- 무엇으로 정했는가. 한 문장으로. -->\n\n## Consequences\n<!-- 이 선택으로 얻는 것과 포기하는 것. 나중에 되돌린다면 무엇이 걸리는가. -->\n\n## Alternatives considered\n<!-- 검토했지만 고르지 않은 것과 그 이유. -->\n",
+  "approvals": []
+}

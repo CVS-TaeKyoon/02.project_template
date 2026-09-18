@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-033",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "팀",
+  "content": "### 팀\n\n- 발의자와 승인자가 다르다. 발의자는 개발자가 아니어도 된다 — 버그를 신고하는 고객, 아이디어가 있는 PM, 프로세스 개선을 떠올린 디자이너 누구나 발의자가 될 수 있다. 이 경우 사용자가 git을 모른다고 전제하고, 파일 내용을 그대로 보여준 뒤 커밋은 대신 처리하라.\n- intent는 **PR로 올린다**. Product Owner가 리뷰하고 머지하는 행위가 곧 \"Stage 2로 진행\" 승인이다. 닫히면 반려다.\n- 상태 줄은 `draft`로 두고, 리뷰 승인 후 **머지 전에** `approved`로 바꾼다. PR이 열려 있는지 닫혔는지는 PR 자체가 기록하므로 문서에 옮겨 적지 않는다.\n- Open questions에 정책·보안·법무 판단이 필요한 항목이 있으면, 누구에게 물어야 하는지까지 문서에 적어라. spec 단계에서 이게 병목이 된다.\n- 조직에 Jira나 ServiceNow가 이미 있다면 없애지 말고 **어느 쪽이 원본인지 하나만 정하라.** 최소 기준은 intent.md에 티켓 ID를 적고 티켓에 커밋 SHA를 남겨 양방향으로 연결하는 것이다.",
+  "rationale": "boilerplate/.agents/skills/intent-capture/SKILL.md:107–114에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-04"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

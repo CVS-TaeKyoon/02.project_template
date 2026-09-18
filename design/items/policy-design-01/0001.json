@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "policy-design-01",
+  "revision": 1,
+  "kind": "constraint",
+  "status": "accepted",
+  "title": "조사와 승인 후 구축",
+  "content": "1. 먼저 현재 상태를 조사해줘\n\n- 기존 AGENTS.md, 설계 문서, 코드 인터페이스, Schema를 확인한다.\n- 기존 파일과 사용자의 미커밋 변경을 보존한다.\n- 기존 설계의 확정 사항, 제안, 예시, 미결 사항을 구분한다.\n- 불명확하거나 충돌하는 내용은 임의로 확정하지 않는다.\n- 조사 후 저장 구조와 이전 계획을 간단히 제안하고,\n  내 승인 후 구축한다.",
+  "rationale": "대화 기억에 의존하지 않고 결정·이유·예외를 보존하기 위한 사용자의 명시적 운영 지시.",
+  "exceptions": [],
+  "source_refs": [
+    "user-design-principles"
+  ],
+  "approval_source": "user-design-principles",
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

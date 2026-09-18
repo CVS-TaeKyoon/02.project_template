@@ -19,7 +19,11 @@
 
 4. 대상 폴더가 비어 있을 때만 https://github.com/CVS-TaeKyoon/02.project_template/archive/refs/heads/main.zip 을 메모리로 받아. ZIP 안의 `boilerplate/` 항목만 `<상위 폴더 경로>\\<프로젝트 이름>`에 직접 풀어. 템플릿 저장소 전체를 clone하거나 임시 폴더에 풀지 마. 따라서 최종 프로젝트 폴더 외에 `project_template_source_test` 같은 중간 폴더나 `.git` 메타데이터가 생기면 안 된다.
 
-5. 새 프로젝트 안의 모든 Markdown(.md) 파일에서 `<프로젝트 이름>`이라는 정확한 자리표시자를 프로젝트 이름으로 바꿔. README.md의 프로젝트 소개 자리와 AGENTS.md의 `## 프로젝트` 설명 자리에는 내가 말한 프로젝트 목적을 자연스러운 한두 문장으로 넣어. 목적과 관계없는 규칙·설명·자리표시자는 임의로 바꾸지 마.
+5. 복사한 프로젝트의 AGENTS.md, design/registry.json, design/work-state.json과 `.agents/design-data/schemas/design.schema.json`을 읽어. 이름은 registry의 project_name에 기록하고, 목적은 고유 ID를 가진 requirement 항목 JSON으로 만들어 purpose_id로 연결해. 방금 받은 내 답변을 출처로 기록하고, 내가 명시한 이름·목적 범위에만 승인을 연결해. 확인하지 않은 날짜·메시지 ID·승인 내용은 만들지 마.
+
+   - `.agents/design-data/design-data.psm1`의 Get-DesignFingerprint로 원본 기준점을 확인한 뒤 Save-DesignBatch로 새 출처·목적 항목·registry·work-state를 함께 저장해. 새 프로젝트의 빈 저장 구조에 템플릿 관리자의 개별 설계나 대화·승인 이력을 가져오지 마.
+   - 기존 Markdown(.md) 파일에서 `<프로젝트 이름>`이라는 정확한 자리표시자만 프로젝트 이름으로 바꿔. 이 초기 생성 요청에 포함된 README 소개는 목적 원본에서 자연스러운 한두 문장으로 채우고, 파생 설명이라는 표시와 목적 ID·revision을 붙여. AGENTS.md에는 목적을 중복 작성하지 말고 원본을 읽는 안내를 유지해. 그 밖의 상세 Markdown·보고서·CHANGELOG는 요청할 때만 만들어.
+   - 저장 후 원본을 다시 읽고 `.agents/design-data/validate.ps1`을 실행해. PowerShell 7.4 이상이 없거나 검사를 실행하지 못하면 완료로 단정하지 말고 이유를 알려줘. 처음 설정한 이름·목적과 아직 설정하지 않은 개발 환경을 구분해서 기록해. 나에게 터미널 명령을 입력하라고 하지 마.
 
 6. 복사가 끝나면 생성한 폴더 경로와 바꾼 Markdown 파일 목록을 쉬운 말로 보여줘. 그다음 "이 프로젝트를 GitHub에도 올릴까요?"라고 한 번만 물어봐.
 

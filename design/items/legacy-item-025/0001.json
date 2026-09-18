@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-025",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "핵심 규율: 여기서는 코드 이야기를 하지 않는다",
+  "content": "## 핵심 규율: 여기서는 코드 이야기를 하지 않는다\n\nintent 단계에서 다뤄야 할 것과 다루면 안 되는 것이 명확히 갈린다.\n\n| 다룬다 | 다루지 않는다 |\n|---|---|\n| 지금 무엇이 안 되는가 | 어떤 라이브러리를 쓸까 |\n| 누구의 문제인가 | DB 스키마를 어떻게 바꿀까 |\n| 어떻게 달라져야 하는가 | 컴포넌트 구조를 어떻게 짤까 |\n| 무엇은 하면 안 되는가 | API 엔드포인트를 어떻게 설계할까 |\n\n사용자가 먼저 구현 이야기를 꺼내면 받아 적지 말고 되물어라. \"그 방법은 spec 단계에서 정하면 됩니다. 지금은 그게 왜 필요한지부터 확정하시죠.\" 구현 아이디어가 아깝다면 `## Open questions`에 힌트로만 남겨라.",
+  "rationale": "boilerplate/.agents/skills/intent-capture/SKILL.md:12–24에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-04"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

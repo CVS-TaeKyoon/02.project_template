@@ -1,0 +1,1464 @@
+{
+  "schema_version": 1,
+  "derived": true,
+  "fingerprint": "b0eb1d3c3e3c9c8f317def0a6d9184b732f5209d7d5058b3e82e46beed9f6513",
+  "items": [
+    {
+      "id": "decision-explicit-git",
+      "title": "로컬 저장과 커밋·push 분리",
+      "kind": "decision",
+      "status": "accepted",
+      "latest_revision": 1,
+      "effective_revision": 1,
+      "path": "design/items/decision-explicit-git/0001.json",
+      "effective_path": "design/items/decision-explicit-git/0001.json",
+      "referenced_by": []
+    },
+    {
+      "id": "decision-preserve-conventions",
+      "title": "충돌하지 않는 기존 규칙 유지",
+      "kind": "decision",
+      "status": "accepted",
+      "latest_revision": 1,
+      "effective_revision": 1,
+      "path": "design/items/decision-preserve-conventions/0001.json",
+      "effective_path": "design/items/decision-preserve-conventions/0001.json",
+      "referenced_by": []
+    },
+    {
+      "id": "decision-storage-layout",
+      "title": "설계 저장 구조와 적용 범위",
+      "kind": "decision",
+      "status": "accepted",
+      "latest_revision": 1,
+      "effective_revision": 1,
+      "path": "design/items/decision-storage-layout/0001.json",
+      "effective_path": "design/items/decision-storage-layout/0001.json",
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-001",
+      "title": "Codex용 새 프로젝트 시작 프롬프트",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-001/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-002",
+      "title": "1. 지금은 정보를 한꺼번에 묻지 마. 먼저 채팅에서 다음 질문만 해: \"프로젝트를 만들 상위 폴더 경로를 알려주세요. 예를 들어 `E",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-002/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-003",
+      "title": "2. 경로를 채팅에서 입력받은 뒤에만 다음 질문을 하나씩 해. 한 질문의 답을 받은 뒤에만 다음 질문을 해.",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-003/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-004",
+      "title": "3. 경로·이름·목적을 모두 받으면 `<상위 폴더 경로>\\<프로젝트 이름>`이 이미 있는지 확인해. 있으면 덮어쓰거나 삭제하지 말고, ",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-004/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-005",
+      "title": "4. 대상 폴더가 비어 있을 때만 https://github.com/CVS-TaeKyoon/02.project_template/arch",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-005/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-006",
+      "title": "5. 새 프로젝트 안의 모든 Markdown(.md) 파일에서 `<프로젝트 이름>`이라는 정확한 자리표시자를 프로젝트 이름으로 바꿔. ",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-006/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-007",
+      "title": "6. 복사가 끝나면 생성한 폴더 경로와 바꾼 Markdown 파일 목록을 쉬운 말로 보여줘. 그다음 \"이 프로젝트를 GitHub에도 올",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-007/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-008",
+      "title": "7. 내가 GitHub 업로드를 원한다고 답한 경우에만 다음을 진행해.",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-008/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-009",
+      "title": "8. 오류가 나면 기존 폴더나 파일을 삭제하지 마. 로컬 프로젝트는 그대로 보존하고, 실패 원인과 내가 선택할 수 있는 다음 행동 하나",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-009/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-010",
+      "title": "구현 계획 (plan.md)",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-010/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "policy-design-02"
+      ]
+    },
+    {
+      "id": "legacy-item-011",
+      "title": "도구가 만드는 계획 파일과 plan.md는 다른 것이다",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-011/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "decision-explicit-git"
+      ]
+    },
+    {
+      "id": "legacy-item-012",
+      "title": "1. 파일을 수정할 수 없는 상태에서 시작한다",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-012/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "policy-design-02"
+      ]
+    },
+    {
+      "id": "legacy-item-013",
+      "title": "2. 계획을 뽑는다",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-013/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-014",
+      "title": "3. 계획을 심문한다 — 이 단계를 건너뛰지 마라",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-014/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-015",
+      "title": "4. 합격 기준: 낯선 사람 테스트",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-015/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-016",
+      "title": "5. 커밋한다",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-016/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "decision-explicit-git"
+      ]
+    },
+    {
+      "id": "legacy-item-017",
+      "title": "6. 구현하고, 벗어나면 갱신한다",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-017/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "decision-explicit-git"
+      ]
+    },
+    {
+      "id": "legacy-item-018",
+      "title": "검증 루프를 함께 설계한다",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-018/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-019",
+      "title": "버그 수정이라면 순서가 다르다",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-019/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "decision-explicit-git"
+      ]
+    },
+    {
+      "id": "legacy-item-020",
+      "title": "개인 / 소규모",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-020/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "decision-explicit-git"
+      ]
+    },
+    {
+      "id": "legacy-item-021",
+      "title": "팀",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-021/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "decision-explicit-git"
+      ]
+    },
+    {
+      "id": "legacy-item-022",
+      "title": "흔한 실패",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-022/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "decision-explicit-git"
+      ]
+    },
+    {
+      "id": "legacy-item-023",
+      "title": "다음 단계",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-023/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-024",
+      "title": "Intent 포착 (intent.md)",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-024/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-025",
+      "title": "핵심 규율: 여기서는 코드 이야기를 하지 않는다",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-025/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-026",
+      "title": "1. 인터뷰한다 — 이게 이 스킬의 본체다",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-026/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-027",
+      "title": "2. 초안을 쓴다",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-027/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "policy-design-02"
+      ]
+    },
+    {
+      "id": "legacy-item-028",
+      "title": "**분량 기준**: 한 화면에 들어와야 한다. 길어진다면 문제를 여러 개 뭉쳐놓은 것이니 intent를 쪼개라.",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-028/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-029",
+      "title": "3. 발의자에게 확인받는다",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-029/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-030",
+      "title": "4. 저장하고 커밋한다",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-030/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "decision-explicit-git"
+      ]
+    },
+    {
+      "id": "legacy-item-031",
+      "title": "규모별 차이",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-031/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-032",
+      "title": "개인 / 소규모",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-032/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "decision-explicit-git"
+      ]
+    },
+    {
+      "id": "legacy-item-033",
+      "title": "팀",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-033/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "decision-explicit-git"
+      ]
+    },
+    {
+      "id": "legacy-item-034",
+      "title": "흔한 실패",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-034/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-035",
+      "title": "다음 단계",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-035/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-036",
+      "title": "자동화된 유지보수 흐름에서 이 스킬을 쓸 때",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-036/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "policy-design-02"
+      ]
+    },
+    {
+      "id": "legacy-item-037",
+      "title": "새 프로젝트 초기 설정",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-037/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-038",
+      "title": "1. 먼저 상태를 확인한다",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-038/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "policy-design-04"
+      ]
+    },
+    {
+      "id": "legacy-item-039",
+      "title": "2. 인터뷰한다 — 한 번에 하나나 둘씩",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-039/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-040",
+      "title": "3. 채운다",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-040/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-041",
+      "title": "4. 확인한다",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-041/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "decision-explicit-git"
+      ]
+    },
+    {
+      "id": "legacy-item-042",
+      "title": "5. 이 스킬을 삭제한다",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-042/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "policy-design-03"
+      ]
+    },
+    {
+      "id": "legacy-item-043",
+      "title": "6. 다음에 할 일을 알려준다",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-043/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-044",
+      "title": "하지 않는 것",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-044/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-045",
+      "title": "프로젝트 구조 안내",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-045/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-046",
+      "title": "답하기 전에 읽을 것",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-046/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "policy-design-02"
+      ]
+    },
+    {
+      "id": "legacy-item-047",
+      "title": "답할 때의 규율",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-047/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "policy-design-02"
+      ]
+    },
+    {
+      "id": "legacy-item-048",
+      "title": "처음 합류한 사람이 \"구조 설명해줘\"라고 하면",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-048/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "policy-design-02"
+      ]
+    },
+    {
+      "id": "legacy-item-049",
+      "title": "자주 나오는 질문",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-049/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "policy-design-02"
+      ]
+    },
+    {
+      "id": "legacy-item-050",
+      "title": "하지 않는 것",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-050/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-051",
+      "title": "Spec 작성 (spec.md)",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-051/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "policy-design-02"
+      ]
+    },
+    {
+      "id": "legacy-item-052",
+      "title": "시작 전 확인",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-052/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "policy-design-02"
+      ]
+    },
+    {
+      "id": "legacy-item-053",
+      "title": "정책을 제약으로 적용한다",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-053/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-054",
+      "title": "충돌은 숨기지 말고 드러낸다",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-054/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-055",
+      "title": "템플릿",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-055/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "policy-design-02"
+      ]
+    },
+    {
+      "id": "legacy-item-056",
+      "title": "작성 원칙",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-056/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-057",
+      "title": "프론트엔드 작업이라면",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-057/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-058",
+      "title": "저장 위치",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-058/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "decision-explicit-git"
+      ]
+    },
+    {
+      "id": "legacy-item-059",
+      "title": "개인 / 소규모",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-059/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "decision-explicit-git"
+      ]
+    },
+    {
+      "id": "legacy-item-060",
+      "title": "팀",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-060/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "policy-design-02"
+      ]
+    },
+    {
+      "id": "legacy-item-061",
+      "title": "흔한 실패",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-061/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-062",
+      "title": "다음 단계",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-062/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-063",
+      "title": "단계",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-063/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-064",
+      "title": "무엇을",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-064/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-065",
+      "title": "확인 — intent",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-065/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "policy-design-02"
+      ]
+    },
+    {
+      "id": "legacy-item-066",
+      "title": "확인 — spec",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-066/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "policy-design-02"
+      ]
+    },
+    {
+      "id": "legacy-item-067",
+      "title": "확인 — plan",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-067/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "policy-design-02"
+      ]
+    },
+    {
+      "id": "legacy-item-068",
+      "title": "확인 — 구현",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-068/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "decision-explicit-git"
+      ]
+    },
+    {
+      "id": "legacy-item-069",
+      "title": "리뷰어에게",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-069/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-070",
+      "title": "AGENTS.md",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-070/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "policy-design-02"
+      ]
+    },
+    {
+      "id": "legacy-item-071",
+      "title": "프로젝트",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-071/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-072",
+      "title": "언어",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-072/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "policy-design-02"
+      ]
+    },
+    {
+      "id": "legacy-item-073",
+      "title": "소스 및 테스트 코드",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-073/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-074",
+      "title": "작업 파이프라인",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-074/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "policy-design-02"
+      ]
+    },
+    {
+      "id": "legacy-item-075",
+      "title": "네이밍",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-075/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "decision-explicit-git"
+      ]
+    },
+    {
+      "id": "legacy-item-076",
+      "title": "스킬",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-076/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "decision-explicit-git"
+      ]
+    },
+    {
+      "id": "legacy-item-077",
+      "title": "문서 합격 기준",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-077/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-078",
+      "title": "하지 말 것",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-078/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-079",
+      "title": "@AGENTS.md",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-079/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-080",
+      "title": "Claude Code 전용",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-080/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-081",
+      "title": "파이프라인 스킬",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-081/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "policy-design-03"
+      ]
+    },
+    {
+      "id": "legacy-item-082",
+      "title": "도구 매핑",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-082/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "decision-explicit-git"
+      ]
+    },
+    {
+      "id": "legacy-item-083",
+      "title": "설정 파일",
+      "kind": "decision",
+      "status": "superseded",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-083/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "decision-explicit-git"
+      ]
+    },
+    {
+      "id": "legacy-item-084",
+      "title": "이 구조를 왜 이렇게 정했는가",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-084/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-085",
+      "title": "이 문서를 읽는 에이전트에게",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-085/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-086",
+      "title": "바탕이 되는 원칙 넷",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-086/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-087",
+      "title": "1. AGENTS.md와 CLAUDE.md가 둘 다 있는 이유",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-087/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-088",
+      "title": "2. 스킬이 두 폴더에 중복으로 들어 있는 이유",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-088/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-089",
+      "title": "3. 문서를 intent → spec → plan 셋으로 나누는 이유",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-089/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-090",
+      "title": "4. 세 문서가 같은 번호·슬러그를 쓰는 이유",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-090/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-091",
+      "title": "5. 루트에 있는 것과 `docs/` 아래로 내린 것",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-091/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-092",
+      "title": "6. 스킬에 도구 이름을 쓰지 않는 이유",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-092/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-093",
+      "title": "7. PR 템플릿에 체크리스트가 있는 이유",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-093/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-094",
+      "title": "8. 스킬을 미리 만들어 두지 않는 이유",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-094/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-095",
+      "title": "9. 동기화 스크립트가 PowerShell인 이유",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-095/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-096",
+      "title": "10. 문서 양식이 두 곳에 있는 이유",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-096/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-097",
+      "title": "프로젝트 시작 프롬프트 Implementation Plan",
+      "kind": "plan",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-097/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-098",
+      "title": "Global Constraints",
+      "kind": "plan",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-098/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-099",
+      "title": "Task 1: 시작 프롬프트 작성",
+      "kind": "plan",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-099/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-100",
+      "title": "- [ ] **Step 3: 필수 지침을 검증한다**",
+      "kind": "plan",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-100/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-101",
+      "title": "Task 2: 비개발자용 사용 안내 작성",
+      "kind": "plan",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-101/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-102",
+      "title": "Task 3: 템플릿 무결성과 최종 검증",
+      "kind": "plan",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-102/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-103",
+      "title": "Problem",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-103/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-104",
+      "title": "Requirements",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-104/0001.json",
+      "effective_path": null,
+      "referenced_by": [
+        "legacy-item-005"
+      ]
+    },
+    {
+      "id": "legacy-item-105",
+      "title": "루트 README",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-105/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-106",
+      "title": "START_PROJECT_PROMPT.md",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-106/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-107",
+      "title": "boilerplate",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-107/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-108",
+      "title": "Data Flow",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-108/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-109",
+      "title": "Error Handling",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-109/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-110",
+      "title": "Validation",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-110/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "legacy-item-111",
+      "title": "Scope",
+      "kind": "decision",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/legacy-item-111/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "policy-design-01",
+      "title": "조사와 승인 후 구축",
+      "kind": "constraint",
+      "status": "accepted",
+      "latest_revision": 1,
+      "effective_revision": 1,
+      "path": "design/items/policy-design-01/0001.json",
+      "effective_path": "design/items/policy-design-01/0001.json",
+      "referenced_by": []
+    },
+    {
+      "id": "policy-design-02",
+      "title": "항목별 설계 원본",
+      "kind": "constraint",
+      "status": "accepted",
+      "latest_revision": 1,
+      "effective_revision": 1,
+      "path": "design/items/policy-design-02/0001.json",
+      "effective_path": "design/items/policy-design-02/0001.json",
+      "referenced_by": [
+        "decision-storage-layout"
+      ]
+    },
+    {
+      "id": "policy-design-03",
+      "title": "과거 내용과 근거 보존",
+      "kind": "constraint",
+      "status": "accepted",
+      "latest_revision": 1,
+      "effective_revision": 1,
+      "path": "design/items/policy-design-03/0001.json",
+      "effective_path": "design/items/policy-design-03/0001.json",
+      "referenced_by": []
+    },
+    {
+      "id": "policy-design-04",
+      "title": "관련 정보와 역참조 조회",
+      "kind": "constraint",
+      "status": "accepted",
+      "latest_revision": 1,
+      "effective_revision": 1,
+      "path": "design/items/policy-design-04/0001.json",
+      "effective_path": "design/items/policy-design-04/0001.json",
+      "referenced_by": []
+    },
+    {
+      "id": "policy-design-05",
+      "title": "승인 범위에 맞춘 업데이트",
+      "kind": "constraint",
+      "status": "accepted",
+      "latest_revision": 1,
+      "effective_revision": 1,
+      "path": "design/items/policy-design-05/0001.json",
+      "effective_path": "design/items/policy-design-05/0001.json",
+      "referenced_by": []
+    },
+    {
+      "id": "policy-design-06",
+      "title": "구조 검사와 의미 검토 분리",
+      "kind": "constraint",
+      "status": "accepted",
+      "latest_revision": 1,
+      "effective_revision": 1,
+      "path": "design/items/policy-design-06/0001.json",
+      "effective_path": "design/items/policy-design-06/0001.json",
+      "referenced_by": []
+    },
+    {
+      "id": "policy-design-07",
+      "title": "요청형 파생 문서",
+      "kind": "constraint",
+      "status": "accepted",
+      "latest_revision": 1,
+      "effective_revision": 1,
+      "path": "design/items/policy-design-07/0001.json",
+      "effective_path": "design/items/policy-design-07/0001.json",
+      "referenced_by": []
+    },
+    {
+      "id": "policy-design-08",
+      "title": "새 세션과 공동 작업",
+      "kind": "constraint",
+      "status": "accepted",
+      "latest_revision": 1,
+      "effective_revision": 1,
+      "path": "design/items/policy-design-08/0001.json",
+      "effective_path": "design/items/policy-design-08/0001.json",
+      "referenced_by": []
+    },
+    {
+      "id": "question-empty-target",
+      "title": "이미 존재하는 빈 대상 폴더 허용 여부",
+      "kind": "question",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/question-empty-target/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "question-legacy-approvals",
+      "title": "과거 설계의 항목별 승인 근거 확인",
+      "kind": "question",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/question-legacy-approvals/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    },
+    {
+      "id": "question-tool-claims",
+      "title": "과거 도구 규격 설명의 현재 유효성",
+      "kind": "question",
+      "status": "proposed",
+      "latest_revision": 1,
+      "effective_revision": null,
+      "path": "design/items/question-tool-claims/0001.json",
+      "effective_path": null,
+      "referenced_by": []
+    }
+  ]
+}

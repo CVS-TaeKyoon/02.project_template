@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-105",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "루트 README",
+  "content": "### 루트 README\n\n비개발자를 위한 짧은 사용 안내와 시작 프롬프트 문서 링크만 제공한다. 이 파일은 템플릿 원본의 안내 문서이며 생성되는 프로젝트에는 복사되지 않는다.",
+  "rationale": "docs/superpowers/specs/2026-09-11-project-bootstrap-prompt-design.md:23–26에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-19"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

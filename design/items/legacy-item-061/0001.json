@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-061",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "흔한 실패",
+  "content": "## 흔한 실패\n\n- **intent를 그대로 부풀리기.** 같은 내용을 섹션만 늘려 다시 쓴 건 spec이 아니다. spec에는 intent에 없던 것 — 요구사항 번호, 설계 결정, 수용 기준, 정책 적용 결과 — 이 들어가야 한다.\n- **Concerns를 비워두기.** 정책이 여러 개 적용되는데 충돌이 하나도 없는 경우는 드물다. 비어 있다면 정책을 실제로 읽지 않았을 가능성이 높다.\n- **코드베이스를 안 읽고 쓰기.** 기존에 이미 있는 추상화를 모르고 새로 설계하면 plan 단계에서 통째로 뒤집힌다.\n- **구현 계획까지 밀고 나가기.** 파일 목록과 작업 순서가 나오기 시작하면 멈춰라. 그건 다음 스킬이다.",
+  "rationale": "boilerplate/.agents/skills/spec-authoring/SKILL.md:140–146에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-07"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

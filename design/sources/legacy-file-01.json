@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "legacy-file-01",
+  "kind": "legacy_file",
+  "locator": {
+    "description": "초기 이전 전 원문. 원래 파일 SHA256: 3560f284f61c2123f16c8a87bcfa478ddf451f807b0fe0b3b822a3a01fceb7e4",
+    "path": "README.md",
+    "commit": "2106763acd6475b99868e59bcb545a03d0a42d74",
+    "message_id": null,
+    "date": null
+  },
+  "content": "# 프로젝트 시작 템플릿\r\n\r\n개발을 처음 시작할 때 Codex와 대화만으로 기본 프로젝트 폴더를 만드는 템플릿입니다.\r\n\r\n## 사용 방법\r\n\r\n1. [START_PROJECT_PROMPT.md](START_PROJECT_PROMPT.md)를 엽니다.\r\n2. 문서 안의 코드 블록 전체를 복사해 Codex 채팅에 붙여넣습니다.\r\n3. Codex 채팅에서 프로젝트를 만들 상위 폴더 경로를 예시와 함께 안내하면 경로를 입력합니다. 예: `E:\\\\my-projects`\r\n4. 이어서 Codex 채팅에서 프로젝트 이름과 프로젝트 목적을 **하나씩** 답합니다.\r\n\r\nCodex는 템플릿 ZIP에서 `boilerplate` 내용만 새 프로젝트 폴더에 직접 풀고, 프로젝트 이름과 목적에 맞게 Markdown 문서를 채웁니다. 임시 clone 폴더나 `.git` 정보는 만들지 않습니다. 이미 같은 이름의 폴더가 있으면 덮어쓰지 않고 다시 물어봅니다.\r\n\r\nGitHub 업로드는 선택 사항입니다. 사용자가 원하고 GitHub CLI(`gh`)가 설치·로그인된 경우에만, 저장소 이름과 공개 여부를 확인한 뒤 최종 승인을 받아 올립니다. 키, 토큰, 비밀번호, `.env` 파일은 채팅이나 GitHub에 올리지 않습니다.\r\n\r\n새 프로젝트에 들어가는 기본 파일 구조는 [boilerplate](boilerplate) 디렉터리에 있습니다.\r\n",
+  "approvals": []
+}

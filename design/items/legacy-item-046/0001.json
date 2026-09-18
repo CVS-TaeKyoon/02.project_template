@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "legacy-item-046",
+  "revision": 1,
+  "kind": "decision",
+  "status": "proposed",
+  "title": "답하기 전에 읽을 것",
+  "content": "## 답하기 전에 읽을 것\n\n질문의 성격에 따라 근거가 있는 파일이 다르다.\n\n| 질문 | 읽을 곳 |\n|---|---|\n| \"무엇을 어디에 쓰나\" / \"규칙이 뭔가\" | `AGENTS.md` |\n| **\"왜 이렇게 되어 있나\" / \"안 지키면 어떻게 되나\" / \"바꿔도 되나\"** | `docs/why-this-structure.md` |\n| \"이 도구에서는 어떻게 하나\" | `CLAUDE.md`, `.codex/` |\n| \"이 프로젝트가 뭘 만드는 건가\" | `AGENTS.md`의 `## 프로젝트` 절, `README.md` |\n| \"문서를 어떻게 쓰나\" | `docs/templates/` 의 빈 양식, 그리고 해당 단계의 스킬 |\n\n`docs/why-this-structure.md`가 이 스킬의 핵심 근거다. 규칙만 반복하고 이유를 대지 못하는 답은\n사용자를 납득시키지 못하며, 납득하지 못한 규칙은 첫 불편함을 겪는 순간 폐기된다.",
+  "rationale": "boilerplate/.agents/skills/project-structure-guide/SKILL.md:14–28에서 옮긴 당시 내용이다. 당시 주장·근거·예외는 원문 그대로 보존한다. 개별 사용자 승인은 확인하지 않았으며 현재 규칙으로 자동 적용하지 않는다.",
+  "exceptions": [],
+  "source_refs": [
+    "legacy-file-06"
+  ],
+  "approval_source": null,
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

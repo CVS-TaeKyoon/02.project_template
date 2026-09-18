@@ -1,0 +1,623 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "설계 원본 및 파생 색인 구조",
+  "$defs": {
+    "relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "enum": [
+            "depends_on",
+            "related_to",
+            "supersedes",
+            "conflicts_with"
+          ]
+        },
+        "target": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]{2,100}$"
+        },
+        "revision": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "type",
+        "target",
+        "revision",
+        "reason"
+      ]
+    },
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]{2,100}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "kind": {
+          "enum": [
+            "requirement",
+            "decision",
+            "constraint",
+            "question",
+            "plan"
+          ]
+        },
+        "status": {
+          "enum": [
+            "proposed",
+            "accepted",
+            "superseded",
+            "rejected"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "content": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        },
+        "exceptions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{2,100}$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "approval_source": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "relations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/relation"
+          }
+        },
+        "previous_revision": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "previous_sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "change_reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "schema_version",
+        "id",
+        "revision",
+        "kind",
+        "status",
+        "title",
+        "content",
+        "rationale",
+        "exceptions",
+        "source_refs",
+        "approval_source",
+        "relations",
+        "previous_revision",
+        "previous_sha256",
+        "change_reason"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]{2,100}$"
+        },
+        "kind": {
+          "enum": [
+            "user_instruction",
+            "user_approval",
+            "legacy_file",
+            "observation"
+          ]
+        },
+        "locator": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "description": {
+              "type": "string",
+              "minLength": 1
+            },
+            "path": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "commit": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "message_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "date": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "description",
+            "path",
+            "commit",
+            "message_id",
+            "date"
+          ]
+        },
+        "content": {
+          "type": "string",
+          "minLength": 1
+        },
+        "approvals": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]{2,100}$"
+              },
+              "revision": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "scope": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "revision",
+              "scope"
+            ]
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "id",
+        "kind",
+        "locator",
+        "content",
+        "approvals"
+      ]
+    },
+    "registry": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "project_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "purpose_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "authorities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "domain": {
+                "type": "string",
+                "minLength": 1
+              },
+              "path": {
+                "type": "string",
+                "minLength": 1
+              },
+              "role": {
+                "enum": [
+                  "canonical",
+                  "derived",
+                  "archive"
+                ]
+              }
+            },
+            "required": [
+              "domain",
+              "path",
+              "role"
+            ]
+          }
+        },
+        "global_constraints": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "paths": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "item_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]{2,100}$"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "paths",
+            "item_ids"
+          ]
+        }
+      },
+      "required": [
+        "schema_version",
+        "project_name",
+        "purpose_id",
+        "authorities",
+        "global_constraints"
+      ]
+    },
+    "workState": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "task": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "not_started",
+            "in_progress",
+            "blocked",
+            "completed"
+          ]
+        },
+        "current_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{2,100}$"
+          },
+          "uniqueItems": true
+        },
+        "open_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{2,100}$"
+          },
+          "uniqueItems": true
+        },
+        "next_actions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "status": {
+                "enum": [
+                  "pending",
+                  "in_progress",
+                  "completed"
+                ]
+              }
+            },
+            "required": [
+              "name",
+              "status"
+            ]
+          }
+        },
+        "validation": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "structural": {
+              "enum": [
+                "not_run",
+                "passed",
+                "failed"
+              ]
+            },
+            "semantic": {
+              "enum": [
+                "pending",
+                "reviewed",
+                "needs_user"
+              ]
+            },
+            "notes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "structural",
+            "semantic",
+            "notes"
+          ]
+        }
+      },
+      "required": [
+        "schema_version",
+        "task",
+        "status",
+        "current_ids",
+        "open_ids",
+        "next_actions",
+        "steps",
+        "validation"
+      ]
+    },
+    "migration": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "baseline_commit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "files": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "path": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source_id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]{2,100}$"
+              },
+              "line_count": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "disposition": {
+                "enum": [
+                  "archived",
+                  "retained",
+                  "updated"
+                ]
+              },
+              "sections": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "start": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "end": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "ids": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9-]{2,100}$"
+                      }
+                    },
+                    "disposition": {
+                      "enum": [
+                        "mapped",
+                        "example",
+                        "context"
+                      ]
+                    },
+                    "reason": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "start",
+                    "end",
+                    "ids",
+                    "disposition",
+                    "reason"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "path",
+              "source_id",
+              "line_count",
+              "disposition",
+              "sections"
+            ]
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "baseline_commit",
+        "files"
+      ]
+    },
+    "index": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "derived": {
+          "const": true
+        },
+        "fingerprint": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]{2,100}$"
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "minLength": 1
+              },
+              "status": {
+                "type": "string",
+                "minLength": 1
+              },
+              "latest_revision": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "effective_revision": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1
+              },
+              "path": {
+                "type": "string",
+                "minLength": 1
+              },
+              "effective_path": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "referenced_by": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9-]{2,100}$"
+                }
+              }
+            },
+            "required": [
+              "id",
+              "title",
+              "kind",
+              "status",
+              "latest_revision",
+              "effective_revision",
+              "path",
+              "effective_path",
+              "referenced_by"
+            ]
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "derived",
+        "fingerprint",
+        "items"
+      ]
+    }
+  }
+}

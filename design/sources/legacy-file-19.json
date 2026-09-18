@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "legacy-file-19",
+  "kind": "legacy_file",
+  "locator": {
+    "description": "초기 이전 전 원문. 원래 파일 SHA256: 6b42033204a13a195f01ce9e2bec23ccd16f55b51ba8ea5d1489cc977b74f5dc",
+    "path": "docs/superpowers/specs/2026-09-11-project-bootstrap-prompt-design.md",
+    "commit": "2106763acd6475b99868e59bcb545a03d0a42d74",
+    "message_id": null,
+    "date": null
+  },
+  "content": "# 프로젝트 시작 프롬프트 설계\n\n## Problem\n\n개발 경험이 없는 사용자가 Codex 채팅에 준비된 프롬프트를 붙여넣어도, 공개 템플릿에서 새 프로젝트를 만들 수 있어야 한다. 사용자는 터미널 명령이나 파일 편집을 하지 않고, 필요한 정보만 대화에서 한 번에 하나씩 답한다.\n\n## Requirements\n\n- 사용자가 복사해 넣을 완성형 시작 프롬프트를 제공한다.\n- 프롬프트는 프로젝트를 만들 상위 폴더 경로, 프로젝트 이름, 프로젝트 목적을 이 순서로 하나씩 질문한다.\n- 템플릿 원본은 `https://github.com/CVS-TaeKyoon/02.project_template`의 `boilerplate` 디렉터리다.\n- 새 프로젝트는 `<상위 폴더>\\\\<프로젝트 이름>`에 만든다. 대상 폴더가 이미 있으면 덮어쓰지 않고 다른 경로 또는 이름을 묻는다.\n- Git을 사용할 수 있으면 저장소를 가져오고, 없으면 GitHub ZIP을 내려받아 같은 결과를 만든다. 템플릿 저장소의 `.git` 메타데이터는 새 프로젝트에 포함하지 않는다.\n- Markdown 파일에서 `<프로젝트 이름>` 자리표시자를 프로젝트 이름으로 치환한다. `README.md`와 `AGENTS.md`의 프로젝트 설명 자리에는 프로젝트 목적을 반영한다.\n- 템플릿 복사 뒤 GitHub 업로드 여부를 묻는다. 사용자가 최종 승인하기 전에는 원격 저장소를 만들거나 push하지 않는다.\n- GitHub 업로드는 GitHub CLI(`gh`)가 설치되고 GitHub 로그인 상태일 때만 진행한다. 설치 또는 로그인이 되지 않았으면 공식 설치·로그인 화면을 안내하고 업로드는 중단한다.\n- GitHub 업로드 전에 저장소 이름과 공개 여부를 한 번에 하나씩 묻고 최종 확인을 받는다.\n- API 키, 토큰, 비밀번호, `.env` 파일은 채팅에 요구하거나 GitHub에 올리지 않는다.\n- 사용자는 터미널 명령을 입력하거나 파일을 직접 수정하지 않는다.\n\n## Components\n\n### 루트 README\n\n비개발자를 위한 짧은 사용 안내와 시작 프롬프트 문서 링크만 제공한다. 이 파일은 템플릿 원본의 안내 문서이며 생성되는 프로젝트에는 복사되지 않는다.\n\n### START_PROJECT_PROMPT.md\n\n사용자가 Codex 채팅에 그대로 붙여넣는 단일 기준 프롬프트다. 입력 순서, 템플릿 수집 방법, 자리표시자 치환 범위, 안전 규칙, GitHub CLI 조건, 완료 보고 형식을 모두 명시한다.\n\n### boilerplate\n\n생성되는 프로젝트의 내용이다. 기존 구조와 `project-bootstrap` 스킬은 수정하지 않는다. `project-bootstrap`은 템플릿 복사 이후 팀 규칙과 개발 환경을 채우는 별도 단계로 유지한다.\n\n## Data Flow\n\n1. 사용자가 시작 프롬프트를 Codex 채팅에 붙여넣는다.\n2. Codex가 상위 경로, 프로젝트 이름, 프로젝트 목적을 차례로 받는다.\n3. Codex가 대상 폴더 충돌을 확인한다.\n4. Codex가 공개 저장소에서 `boilerplate`만 복사하고 Markdown 자리표시자를 치환한다.\n5. Codex가 생성 결과를 보여주고 GitHub 업로드 여부를 묻는다.\n6. 업로드를 선택하면 `gh` 설치·로그인을 검증하고, 저장소 이름·공개 여부·최종 승인을 차례로 받는다.\n7. Codex가 새 GitHub 저장소를 만들고 첫 커밋을 push한 뒤 URL을 알려준다.\n\n## Error Handling\n\n- 대상 폴더가 있으면 중단하고 새 경로 또는 이름을 요청한다.\n- 템플릿을 가져오지 못하면 부분 생성물을 정리하지 않고, 실패 원인과 재시도 방법만 알린다.\n- `gh`가 없거나 로그아웃 상태이면 업로드만 중단한다. 로컬 프로젝트는 보존한다.\n- 민감 파일이 발견되면 업로드를 멈추고 제외 여부를 사용자에게 알린다.\n- 기존 원격 저장소·로컬 폴더·파일을 삭제하거나 덮어쓰지 않는다.\n\n## Validation\n\n- `START_PROJECT_PROMPT.md`에 실제 템플릿 URL, 순차 질문, 폴더 충돌 방지, GitHub 승인 절차, `gh` 조건, 민감 정보 보호 규칙이 모두 있는지 확인한다.\n- Markdown 링크가 실제 공개 저장소를 가리키는지 확인한다.\n- `git diff --check`로 문서 형식 오류를 점검한다.\n- `boilerplate/.agents/sync-skills.ps1 -Check`로 기존 스킬 원본과 미러의 일치를 확인한다.\n\n## Scope\n\n이번 변경은 시작 프롬프트와 안내 문서만 추가한다. 템플릿의 기존 스킬·프로젝트 구조·GitHub Actions는 변경하지 않으며, 별도 CLI나 플러그인도 만들지 않는다.\n",
+  "approvals": []
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "policy-design-06",
+  "revision": 1,
+  "kind": "constraint",
+  "status": "accepted",
+  "title": "구조 검사와 의미 검토 분리",
+  "content": "6. 검증\n\n- JSON Schema로 기본 구조와 필수 필드를 검사한다.\n- 중복 ID, 깨진 참조, revision 및 상태 오류를 검사한다.\n- 폐기된 결정에 대한 활성 참조와 모순 가능성을 점검한다.\n- 구조 검증과 설계 의미 검토를 구분한다.\n- 자동 검증 성공만으로 설계가 옳거나 승인됐다고 판단하지 않는다.\n- 실행하지 못한 검사는 명확하게 보고한다.",
+  "rationale": "대화 기억에 의존하지 않고 결정·이유·예외를 보존하기 위한 사용자의 명시적 운영 지시.",
+  "exceptions": [],
+  "source_refs": [
+    "user-design-principles"
+  ],
+  "approval_source": "user-design-principles",
+  "relations": [],
+  "previous_revision": null,
+  "previous_sha256": null,
+  "change_reason": "초기 이전: 원문과 승인 범위를 분리하여 기록한다."
+}

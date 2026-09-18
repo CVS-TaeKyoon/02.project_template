@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "legacy-file-15",
+  "kind": "legacy_file",
+  "locator": {
+    "description": "초기 이전 전 원문. 원래 파일 SHA256: a1fae723c942b0bac242ce3342113952288ed5d01b3ffbb7884954b9d5d0ba0c",
+    "path": "boilerplate/docs/templates/plan.md",
+    "commit": "2106763acd6475b99868e59bcb545a03d0a42d74",
+    "message_id": null,
+    "date": null
+  },
+  "content": "# Plan: <제목>\n출처: docs/intent/NNN-슬러그.md, docs/specs/NNN-슬러그.md · 상태: draft\n\n<!--\nspec을 요약해놓고 계획이라 부르지 않는다. 파일 경로와 순서가 없으면 계획이 아니다.\n합격 기준은 낯선 사람 테스트 — 이 대화를 못 본 사람이 이 문서만 읽고 구현할 수 있는가.\n실제로 구현하는 것이 그 대화를 못 본 다른 세션일 수 있다.\n구현이 계획에서 벗어나면 같은 커밋에서 이 문서를 갱신한다.\n-->\n\n## Files\n<!-- 바뀌는 파일 전부. 신규/수정을 구분한다. -->\n- <경로> (신규) — <역할>\n- <경로> (수정) — <무엇이 달라지는가>\n\n## Order of work\n<!-- 각 단계가 끝났을 때 시스템이 어떤 상태인지 알 수 있게 쓴다. -->\n1.\n2.\n\n## Risks\n<!-- 구체적인 파일이나 동작을 지목한다.\n     \"예상치 못한 버그가 있을 수 있음\"에는 정보가 없다.\n     spec의 Concerns에서 이월된 미해결 항목도 여기 적는다. -->\n-\n\n## Proof\n<!-- 무엇을 증명하는 검증이고 spec의 어느 수용 기준(AC)에 대응하는지 적는다.\n     \"테스트 작성\"만 적으면 증명이 아니다. -->\n-\n\n## Alternatives considered\n<!-- 검토했지만 고르지 않은 방법과 그 이유. 계획을 심문한 결과를 남긴다. -->\n-\n",
+  "approvals": []
+}
